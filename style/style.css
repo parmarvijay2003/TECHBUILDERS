@@ -276,38 +276,55 @@
         font-size: 1.125rem;
         line-height: 1.6; color:#ffffff;
     }
-  
-    /* @media (max-width: 768px) {
-        .container {
-            flex-direction: column;
-            text-align: center;
-        }
-  
-        .image-container {
-            margin-bottom: 10px;
-        }
-  
-        .content-container h1 {
-            font-size: 2rem;
-        }
-    }        */
-     /* media qrey  phone view*/
+         
+/* servisce card start css */
+.circle {  
+    width: 84px;
+    height: 84px;
+    background:rgba(79, 160, 149, 0.1);
+    border-radius: 50%;
+    margin: auto; 
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.card-body{
+    border-radius: 20px; 
+    display: grid;
+    place-items: center;
+    gap: 29px;
+}
+.card-title{
+     font-size: 24px;
+     font-weight: 700;
+}
+.card-text{
+    font-size: 14px;
+    font-weight: 400;
+}
+.card{
+    border-radius: 20px;
+}
 
-        
-        
 
-        @media (max-width:600px) {
+
+
+/* 
+        @media (max-width:768px) {
                 body
                 {
                         margin: auto;
                         display: inline-block;
                         justify-content: center;
-                        align-items: center;
-                 }
+                        align-items: center; 
+                        box-sizing: border-box;
+                 } */
             /* Your custom styles for small screens */
-            #logo {
+            /* #logo {
                 max-width: 100px;
             }
+          
 
             .nav-link.active {
                 background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
@@ -315,8 +332,8 @@
                 background-clip: text;
                 color: transparent;
                 font-size: 19px;
-            } 
-             .title {
+            }  */
+             /* .title {
                 position: relative;
                 font-size: 39px;
                 font-weight: 600;
@@ -388,9 +405,9 @@
             #arrow {
                 min-width: 28px;
                 height: 20px;
-            }
+            } */
             /* second_componet css */
-            .service-section{
+            /* .service-section{
                 display: flex;
                 justify-items: center;
                 max-width: 378px;
@@ -417,11 +434,11 @@
             }.container{
                 position: relative;
                 top:90px;
-            }
+            } */
 
             /* brand componet css */
 
-        }
+        /* } */
         /* For screens smaller than or equal to 576px (phone view) */
 
         @media(max-width:1040px) {
@@ -452,7 +469,154 @@
                 
                 /* Active color */
             }
-        } @media (max-width:430px) {
+        }
+        
+         /* media qrey  tablet view*/
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            text-align: center; 
+        }
+  
+        .image-container {
+            margin-bottom: 10px;
+        }
+  
+        .content-container h1 {
+            font-size: 28px;
+            font-weight: 600;
+            display: grid;
+            margin: auto;
+
+
+        } .content-container p{
+            font-family: Bricolage Grotesque;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            min-width: 406px; 
+            position: relative;
+            top:30px;
+            
+        }
+        .highlight{
+            color: white;
+        }
+        .first_component {
+            flex-direction: column;
+          }
+        
+          .brand {
+            text-align: center;
+            margin: 0 auto;
+          }
+      
+          img#brand_svg {
+            width: 100%;
+            height: auto;
+          }.brand{
+              display: grid;
+              place-items: center;
+          }
+          .brand_titel{
+              padding:12px 35px 13px 35px;
+            }
+            .title {
+                position: relative;
+                font-size: 28px;
+                font-weight: 600;
+                text-align: center;
+                max-width: 336px;
+                min-height: 72px;
+                margin-top: 20px;
+                margin: auto; min-width: 20%; 
+            }
+
+            #brand {
+                font-size: 28px;
+                font-weight: 600;
+            }
+
+            .brand_titel {
+                min-width: 200px;
+                position: relative;
+                padding: 0px;
+                margin:auto;
+                top:10px;
+            }
+
+            #text {
+                position: relative;
+                font-family: Bricolage Grotesque;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                min-width: 390px;
+                min-height: 96px;
+                top: 30px;
+            }
+
+            .bt {
+                position: relative;
+                font-size: 20px;
+                font-weight: 700;
+                min-width: 190px;
+                top: 30px;
+            }
+
+            .first_componet {
+                display: flex;
+                justify-items: center;
+                max-width: 378px;
+                margin: auto;
+            }
+
+            .brand{
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                min-width: 378px;
+                min-height: 372px;
+                padding-top: 20px;
+            }
+
+            #brand_svg {
+                position: relative;
+                min-width: 355px;
+                margin-top: 20px;
+            }
+
+            #arrow {
+                min-width: 28px;
+                height: 20px;
+            }
+            .content-container p{
+                font-family: Bricolage Grotesque;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                min-width: 406px; 
+                position: relative;
+                top:30px;
+                margin: auto;
+                box-sizing: border-box;
+                min-width: 40%;
+            }
+            #l_frame{display: none}
+            #Services_titel{
+                position: relative;
+                top:30px;
+                font-size: 24px;
+            }
+    }
+        /* phone css  start */
+        @media (max-width:576px) {
             body {
                 margin: auto;
                 display: inline-block;
@@ -572,6 +736,7 @@
                 max-width: 336px;
                 min-height: 72px;
                 margin-top: 20px;
+                margin: auto; min-width: 20%; 
             }
 
             #brand {
@@ -583,7 +748,8 @@
                 min-width: 200px;
                 position: relative;
                 padding: 0px;
-                margin-top: 20px;
+                margin:auto;
+                top:10px;
             }
 
             #text {
@@ -632,6 +798,26 @@
             #arrow {
                 min-width: 28px;
                 height: 20px;
+            }
+            .content-container p{
+                font-family: Bricolage Grotesque;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                min-width: 406px; 
+                position: relative;
+                top:30px;
+                margin: auto;
+                box-sizing: border-box;
+                min-width: 40%;
+            }
+            #l_frame{display: none}
+            #Services_titel{
+                position: relative;
+                top:30px;
+                 font-size: 24px;
             }
         }
         
