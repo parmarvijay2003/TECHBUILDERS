@@ -1,0 +1,1228 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    font-family: Bricolage Grotesque;
+    color: white;
+}
+
+.title {
+    position: relative;
+    top: 300px;
+    left: 390.14px;
+    width: 594px;
+    height: 103px;
+    border: 2px dashed #F0773A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title img {
+    position: absolute;
+    right: 830px;
+}
+
+.Service {
+    text-align: center;
+    width: 594px;
+    height: 52.13px;
+    margin: 22px 50px;
+}
+
+.Service p {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 52px;
+    display: inline;
+    background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
+    color: transparent;
+    -webkit-background-clip: text;
+    align-items: center;
+}
+
+.sof-Dev {
+    position: relative;
+    width: 1, 440px;
+    height: 594px;
+    top: 340px;
+    padding: 0px 100px 0px 100px;
+    display: block;
+}
+
+.img1 {
+    width: 541px;
+    height: 594px;
+    top: 0px;
+    float: right;
+}
+
+.Dev-container {
+    position: relative;
+    display: block;
+    width: 554px;
+    height: 207px;
+    gap: 30px;
+    top: 195.5px;
+}
+
+.Dev-title {
+    position: relative;
+    color: white;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 52px;
+    top: 0px;
+}
+
+.Dev-points {
+    display: block;
+    position: relative;
+    width: 454.48px;
+    height: 112px;
+    gap: 50px;
+    top: 40px;
+}
+
+.Dev-point1 {
+    width: 216.48px;
+    height: 112px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service-item:last-child {
+    margin-bottom: 0;
+}
+
+.service-icon {
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Dev-point2 {
+    position: relative;
+    width: 196px;
+    height: 112px;
+    float: right;
+    top: -127px;
+}
+
+.explain-work {
+    width: 1063px;
+    height: 778.75px;
+    top: 1330px;
+    left: 201px;
+    gap: 81px;
+    opacity: 0px;
+    position: absolute;
+}
+
+.anymation2 {
+    width: 159.14px;
+    height: 169.66px;
+    top: 590.39px;
+    border: 1px 0px 0px 0px;
+    position: relative;
+    transform: rotate(180deg);
+    text-align: right;
+    left: 1184px;
+}
+
+.Box-1 {
+    position: relative;
+    top: 0px;
+    height: 102px;
+    border: 2px dashed #F0773A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 408.37px;
+    left: 327.32px;
+}
+
+.siniyer-carts {
+    position: absolute;
+    width: 1027px;
+    height: 595px;
+    top: 183px;
+    gap: 59px;
+}
+
+.junniyer-carts1 {
+    width: 1, 027px;
+    height: 268px;
+    gap: 58px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart1 {
+    display: inline-block;
+    width: 265px;
+    height: 256px;
+    gap: 19px;
+}
+
+.cart1 img {
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+}
+
+.cart1-text {
+    width: 191px;
+    height: 72px;
+    gap: 10px;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+}
+
+.cart1-text2 {
+    width: 265px;
+    height: 96px;
+    gap: 10px;
+    position: relative;
+    top: 28px;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+
+}
+
+.line {
+    position: absolute;
+    width: 268px;
+    height: 0px;
+    top: 130px;
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(270deg, rgba(232, 107, 49, 0) 0%, rgba(134, 53, 15, 0.6) 50.38%, rgba(232, 107, 49, 0) 100%);
+    transform: rotate(90deg);
+    left: 181px;
+    display: flex;
+}
+
+.cart2 {
+    position: relative;
+    display: inline-block;
+    width: 265px;
+    height: 256px;
+    gap: 19px;
+    right: 13px;
+}
+
+.cart1 img {
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+}
+
+.cart2-text {
+    width: 191px;
+    height: 72px;
+    gap: 10px;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+}
+
+.cart2-text2 {
+    width: 265px;
+    height: 96px;
+    gap: 10px;
+    position: relative;
+    top: 28px;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.line1 {
+    position: absolute;
+    width: 268px;
+    height: 0px;
+    top: 130px;
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(270deg, rgba(232, 107, 49, 0) 0%, rgba(134, 53, 15, 0.6) 50.38%, rgba(232, 107, 49, 0) 100%);
+    transform: rotate(90deg);
+    right: 208px;
+}
+
+.cart3 {
+    display: inline-block;
+    position: relative;
+    width: 265px;
+    height: 256px;
+    gap: 19px;
+    right: 22px;
+}
+
+.cart3 img {
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+}
+
+.cart3-text {
+    width: 191px;
+    height: 72px;
+    gap: 10px;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+}
+
+.cart3-text2 {
+    width: 265px;
+    height: 96px;
+    gap: 10px;
+    position: relative;
+    top: 28px;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.junniyer-carts2 {
+    width: 632px;
+    height: 268px;
+    gap: 51px;
+    position: relative;
+    top: 59px;
+    left: 197px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart4 {
+    display: inline-block;
+    position: relative;
+    width: 265px;
+    height: 256px;
+    gap: 19px;
+}
+
+.cart4 img {
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+}
+
+.cart4-text {
+    width: 191px;
+    height: 72px;
+    gap: 10px;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+}
+
+.cart4-text2 {
+    width: 265px;
+    height: 96px;
+    gap: 10px;
+    position: relative;
+    top: 28px;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.cart5 {
+    display: inline-block;
+    position: relative;
+    width: 265px;
+    height: 256px;
+    gap: 19px;
+}
+
+.cart5 img {
+    width: 50px;
+    height: 50px;
+    gap: 10px;
+}
+
+.cart5-text {
+    width: 191px;
+    height: 72px;
+    gap: 10px;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+}
+
+.cart5-text2 {
+    width: 265px;
+    height: 96px;
+    gap: 10px;
+    position: relative;
+    top: 28px;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.box-2 {
+    width: 1341px;
+    height: 1742.37px;
+    position: relative;
+    top: 1280px;
+}
+
+.SD-01 {
+    display: flex;
+    width: 1139px;
+    height: 542px;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0px 100px 0px 100px;
+}
+
+.text-title-box {
+    width: 697px;
+    height: 483.69px;
+    gap: 75px;
+    position: relative;
+}
+
+.text-title-box h1 {
+    width: 179px;
+    height: 120px;
+    font-family: Arial;
+    font-size: 160px;
+    font-weight: 700;
+    line-height: 183.98px;
+    text-align: left;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E86B31;
+    position: relative;
+    bottom: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-01 {
+    width: 477px;
+    height: 106px;
+    position: relative;
+    left: 190px;
+    bottom: 326px;
+}
+
+.pera1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 52px;
+    display: inline;
+    background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
+    color: transparent;
+    -webkit-background-clip: text;
+    align-items: center;
+    position: relative;
+}
+
+.detials {
+    width: 697px;
+    height: 288.69px;
+    gap: 10px;
+    position: absolute;
+    top: 195px;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.img-01-1 {
+    width: 567px;
+    height: 542px;
+    position: relative;
+    top: -453px;
+    left: 670px;
+    text-align: right;
+}
+
+.SD-02 {
+    display: flex;
+    width: auto;
+    height: 542px;
+    justify-content: space-between;
+    position: relative;
+    top: 600px;
+}
+
+.img-02-1 {
+    width: 594px;
+    height: 394px;
+    position: relative;
+    top: 70.84px;
+    left: 100px;
+}
+
+.text-title-box2 {
+    width: 697px;
+    height: 483.69px;
+    gap: 75px;
+    opacity: 0px;
+    position: relative;
+}
+
+.text-title-box2 h1 {
+    width: 179px;
+    height: 120px;
+    font-family: Arial;
+    font-size: 160px;
+    font-weight: 700;
+    line-height: 183.98px;
+    text-align: left;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E86B31;
+    position: absolute;
+    bottom:254px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-02 {
+    width: 477px;
+    height: 106px;
+    position: relative;
+    top: 12px;
+    left: 194px;
+}
+
+.detials2 {
+    width: 697px;
+    height: 288.69px;
+    gap: 10px;
+    position: relative;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    top: 83px;
+    /* border: 2px solid white; */
+}
+
+.SD-03 {
+    display: flex;
+    width: auto;
+    height: 542px;
+    justify-content: space-between;
+    position: relative;
+    top: 653px;
+}
+
+.text-title-box3 {
+    width: 697px;
+    height: 483.69px;
+    gap: 75px;
+    opacity: 0px;
+    position: relative;
+    left: 100px;
+}
+
+.text-title-box3 h1 {
+    width: 179px;
+    height: 148px;
+    font-family: Arial;
+    font-size: 160px;
+    font-weight: 700;
+    line-height: 183.98px;
+    text-align: left;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E86B31;
+    position: absolute;
+    bottom: 227px;
+}
+
+.title-03 {
+    width: 477px;
+    height: 106px;
+    position: relative;
+    top: 39px;
+    left: 196px;
+}
+
+.pera1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 52px;
+    display: inline;
+    background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
+    color: transparent;
+    -webkit-background-clip: text;
+    align-items: center;
+    position: relative;
+}
+
+.detials3 {
+    width: 697px;
+    height: 288.69px;
+    gap: 10px;
+    position: relative;
+    top: 83px;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.img-03-1 {
+    width: 567px;
+    height: 542px;
+    position: relative;
+    top: -406px;
+    left: 673px;
+    text-align: right;
+}
+
+.anymation3 {
+    position: relative;
+    top: 1565px;
+}
+
+.box3 {
+    display: flex;
+    width: 1291px;
+    height: 1127px;
+    top: 1415px;
+    left: 52px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.Project {
+    text-align: center;
+    width: 594px;
+    height: 52.13px;
+    margin: 22px 50px;
+    position: relative;
+    top: -20px;
+    height: 103px;
+    border: 2px dashed #F0773A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 293.34px;
+    left: 520.83px;
+}
+
+.Project p {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 52px;
+    display: inline;
+    background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
+    color: transparent;
+    -webkit-background-clip: text;
+    align-items: center;
+}
+
+.title2 {
+    display: flex;
+    width: auto;
+    height: 78px;
+    top: 236.31px;
+    left: -8%;
+    position: absolute;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.title2 p {
+    position: relative;
+    top: -50px;
+    left: 100px;
+}
+
+.portfolio {
+    background: linear-gradient(91.12deg, #FB8D48 46.43%, #ED7136 57%, #C54E47 67.57%, #C14F49 67.57%, #9D3863 78.14%, #5E1F72 88.71%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#buttion1 {
+    background: linear-gradient(black, black) padding-box,
+        linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    width: 245px;
+    height: 70px;
+    gap: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    left: 400px;
+    text-decoration: none;
+}
+
+.seniyer-cart {
+    /* border: 2px solid white; */
+    width: 1299px;
+    height: 1681px;
+    padding: 0px 20px 0px 20px;
+    gap: 80px;
+    display: flex;
+    top: 446px;
+    left: -4%;
+    position: absolute;
+}
+
+.child {
+    display: flex;
+    position: relative;
+    width: 1100px;
+    height: 778px;
+    padding: 0px 100px 0px 100px;
+    top: 24px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1 {
+    width: 600px;
+    height: 775px;
+    display: block;
+}
+
+.shoe-spot {
+    position: relative;
+    width: 600px;
+    height: 495px;
+    gap: 0px;
+    border-radius: 40px 40px 40px 40px;
+    opacity: 0px;
+    top: 30px;
+}
+
+.child .span {
+    font-family: Bricolage Grotesque;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: right;
+    color: #007DFC;
+}
+
+
+
+.child .pera2 {
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 117px;
+    gap: 10px;
+    top: 40px;
+}
+
+.child .pera2 span {
+    position: relative;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    text-align: left;
+    top: 20px;
+    left: 20px;
+
+}
+
+#buttion2 {
+    display: flex;
+    width: 245px;
+    height: 70px;
+    gap: 20px;
+    margin-top: 98px;
+    border-radius: 50px;
+    background-color: #007DFC;
+    color: white;
+    font-family: Bricolage Grotesque;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Rajvee-Digital {
+    position: relative;
+    width: 600px;
+    height: 495px;
+    border-radius: 40px 40px 40px 40px;
+    top: 30px;
+}
+
+.child .span2 {
+    font-family: Bricolage Grotesque;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    color: #7288FA;
+}
+
+.child .card {
+    width: 600px;
+    height: 495px;
+}
+
+.child .pera2 {
+    position: relative;
+    width: 600px;
+    height: 75px;
+    gap: 10px;
+    top: 30px;
+}
+
+.child .pera2 span {
+    position: relative;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    text-align: left;
+    top: 30px;
+    left: 20px;
+}
+
+#buttion3 {
+    display: flex;
+    width: 245px;
+    height: 70px;
+    gap: 20px;
+    margin-top: 98px;
+    border-radius: 50px;
+    background-color: #7288FA;
+    color: white;
+    font-family: Bricolage Grotesque;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.child2 {
+    display: flex;
+    position: absolute;
+    width: 1100px;
+    height: 778px;
+    padding: 0px 100px 0px 100px;
+    top: 879px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1 {
+    width: 600px;
+    height: 775px;
+    display: block;
+}
+
+.Ashpveda {
+    position: relative;
+    width: 600px;
+    height: 495px;
+    gap: 0px;
+    border-radius: 40px 40px 40px 40px;
+    opacity: 0px;
+    top: 30px;
+}
+
+.child2 .span3 {
+    font-family: Bricolage Grotesque;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: right;
+    color: #009487;
+}
+
+
+
+.child2 .pera2 {
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 117px;
+    gap: 10px;
+    top: 40px;
+}
+
+.child2 .pera2 span {
+    position: relative;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    text-align: left;
+    top: 20px;
+    left: 20px;
+
+}
+
+#buttion4 {
+    display: flex;
+    width: 245px;
+    height: 70px;
+    gap: 20px;
+    margin-top: 55px;
+    border-radius: 50px;
+    background-color: #009487;
+    color: white;
+    font-family: Bricolage Grotesque;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Befit {
+    position: relative;
+    width: 600px;
+    height: 495px;
+    border-radius: 40px 40px 40px 40px;
+    top: 30px;
+}
+
+.child2 .span4 {
+    font-family: Bricolage Grotesque;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    color: #6AF001;
+}
+
+.child .card {
+    width: 600px;
+    height: 495px;
+}
+
+.child .pera2 {
+    position: relative;
+    width: 600px;
+    height: 75px;
+    gap: 10px;
+    top: 30px;
+}
+
+.child .pera2 span {
+    position: relative;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    text-align: left;
+    top: 30px;
+    left: 20px;
+}
+
+#buttion5 {
+    display: flex;
+    width: 245px;
+    height: 70px;
+    gap: 20px;
+    margin-top: 55px;
+    border-radius: 50px;
+    background-color: #6AF001;
+    color: white;
+    font-family: Bricolage Grotesque;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container6 {
+    position: relative;
+    width: 527px;
+    height: 212px;
+    top: 2593px;
+    left: 439px;
+    right: 456px;
+    display: inline-block;
+}
+
+.project {
+    font-family: Bricolage Grotesque;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+}
+
+#buttion6 {
+    background: linear-gradient(black, black) padding-box,
+        linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    width: 245px;
+    height: 70px;
+    gap: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 139px 0px 0px 124.5px;
+    text-decoration: none;
+}
+
+.Footer {
+    position: relative;
+    width: 1, 440px;
+    height: 303px;
+    top: 2754px;
+    gap: 20px;
+    background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
+    color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Footer-child1 {
+    position: relative;
+    width: 1247px;
+    height: 255px;
+    gap: 98px;
+    top: 24.5px;
+    left: 39.5px;
+    /* border: 2px solid white; */
+}
+
+.Footer-child2 {
+    width: 481px;
+    height: 255px;
+    gap: 30px;
+    /* border: 2px solid red; */
+}
+
+.Footer-child2 .foot-lorem {
+    width: 481px;
+    height: 140px;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+    opacity: 0px;
+    color: white;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    /* border: 2px solid black; */
+}
+
+.Footer-Service {
+    position: relative;
+    width: 182px;
+    height: 186px;
+    gap: 10px;
+    top: -248px;
+    left: 579px;
+    /* border: 2px solid white; */
+    display: inline-block block;
+}
+
+.Footer-Service h1 {
+    color: white;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+    margin: 0px;
+}
+
+.Footer-Service li {
+    list-style-type: none;
+    font-family: Bricolage Grotesque;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 10px 0px 5px 0px;
+    cursor: pointer;
+}
+
+
+.Footer-Join-Us {
+    position: relative;
+    width: 141px;
+    height: 133px;
+    gap: 10px;
+    top: -438px;
+    left: 859px;
+    /* border: 2px solid white; */
+    display: inline-block block;
+}
+
+.Footer-Join-Us h1 {
+    color: white;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+    margin: 0px;
+}
+
+.Footer-Join-Us li {
+    list-style-type: none;
+    font-family: Bricolage Grotesque;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.Footer-Contact-Us {
+    position: relative;
+    width: 149px;
+    height: 144px;
+    gap: 12px;
+    top: -575px;
+    left: 1094px;
+    /* border: 2px solid white; */
+    display: inline-block block;
+}
+
+.Footer-Contact-Us h1 {
+    color: white;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+    margin: 0px;
+}
+
+.Footer-Contact-Us li {
+    list-style-type: none;
+    font-family: Bricolage Grotesque;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.copyright-text {
+    width: 506px;
+    height: 36px;
+    gap: 10px;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    color: white;
+    position: relative;
+    top: 2774px;
+    left: 467px;
+    display: block;
+}
