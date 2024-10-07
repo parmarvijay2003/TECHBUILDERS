@@ -5,7 +5,7 @@
     --txt-color: white;
     --font-size: 24px;
     --font-size2: 28px;
-    
+
 }
 
 body {
@@ -168,9 +168,11 @@ body {
     font-size: 45px;
     font-weight: 600;
 }
-.Software-title{
-display: none;
+
+.Software-title {
+    display: none;
 }
+
 .Dev-points {
     display: block;
     position: relative;
@@ -227,7 +229,8 @@ display: none;
     text-align: center;
     padding-top: 65px;
 }
-.brand-portfolio-title{
+
+.brand-portfolio-title {
     color: white;
     font-family: Bricolage Grotesque;
     font-size: 45px;
@@ -262,6 +265,7 @@ display: none;
     text-align: left;
     padding-bottom: 30px;
 }
+
 .card1-title-social-media-cart {
     font-family: Bricolage Grotesque;
     font-size: 32px;
@@ -357,6 +361,7 @@ display: none;
     border-image-slice: 1;
     border-image-source: linear-gradient(270deg, rgba(232, 107, 49, 0) 0%, rgba(134, 53, 15, 0.6) 50.38%, rgba(232, 107, 49, 0) 100%);
 }
+
 .game-Dev-points {
     display: flex;
     position: relative;
@@ -392,10 +397,104 @@ display: none;
     position: relative;
     float: right;
 }
-.container6{
+
+.container6 {
     padding-top: 225px;
     display: flex;
     align-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+footer {
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    color: white;
+    padding: 20px 0;
+    margin-top: 100px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    flex: 1 1 300px;
+    padding: 10px;
+}
+
+.footer-logo p {
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.footer-links {
+    display: flex;
+    flex: 2 1 600px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer-links div {
+    flex: 1;
+    padding-left: 98px;
+}
+
+.footer-links h3 {
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: white;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    
+}
+
+@media (max-width: 768px) {
+    
 }
