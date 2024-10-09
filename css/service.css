@@ -492,9 +492,22 @@ footer {
     font-weight: 600;
     line-height: 36px;
     text-align: left;
-    
+
 }
 
-@media (max-width: 768px) {
-    
+#Services_titel {
+    border: 3px dashed rgba(232, 107, 49, 1);
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    max-width: 30%;
+    position: relative;
+    padding-top: 24px;
+    font-family: Bricolage Grotesque;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: center;
+    margin-top: 300px;
 }
