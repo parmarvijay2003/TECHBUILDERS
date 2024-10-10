@@ -1,47 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
+    --bg-color: Black;
+    --txt-color: white;
+    --font-size: 24px;
+    --font-size2: 28px;
+
+}
+
 body {
-    margin: 0%;
-    padding: 0%;
-    background-color: black;
-    font-family: Bricolage Grotesque;
+    background-color: var(--bg-color);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.navbar {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    background: linear-gradient(#000000, #000000) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+    margin-right: 20px;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    filter: blur(px);
+    transform: translate3d(6px, 12px, -1px);
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.nav-link {
+    font-family: 'Bricolage Grotesque';
+    font-weight: bold;
+    line-height: 32px;
+    text-align: left;
+    color: #ffffff;
+    position: relative;
+    font-size: 28px;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+
+.dropdown-menu {
+    position: relative;
+    background-color: white;
+    color: white;
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background: linear-gradient(#2E2C29, #2E2C29) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+}
+
+.dropdown-item {
+    color: white;
+    font-size: 19px;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+#navbarDropdown {
+    font-size: 28px;
     color: white;
 }
 
-.title {
+.navbar-collapse {
     position: relative;
-    top: 300px;
-    left: 390.14px;
-    width: 594px;
-    height: 103px;
-    border: 2px dashed #F0773A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.title img {
-    position: absolute;
-    right: 830px;
+/* Default button style */
+.nav-link {
+    color: white;
+    /* Default color */
 }
 
-.Service {
-    text-align: center;
-    width: 594px;
-    height: 52.13px;
-    margin: 22px 50px;
-}
-
-.Service p {
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 52px;
-    display: inline;
-    background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
-    color: transparent;
+/* Active button color */
+.nav-link.active {
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
     -webkit-background-clip: text;
-    align-items: center;
+    background-clip: text;
+    color: transparent;
+    font-size: 28px;
+    /* Active color */
 }
 
-.sof-Dev {
+.second_componet {
+    max-width: 100%;
+    height: 165px;
+    margin-top: 124px;
+    position: relative;
+    right: 20px;
+}
+
+#Services_titel {
+    border: 3px dashed rgba(232, 107, 49, 1);
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    max-width: 45%;
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-family: Bricolage Grotesque;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: center;
+    margin-top: 300px;
+    top: -148px;
+    left: 30%;
+}
+
+@media (max-width: 768px) {
+    #Services_titel {
+        max-width: 374px;
+        font-size: 30px;
+        top: -49px;
+        left: 25%;
+    }
+
+    .second_componet img {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    #Services_titel {
+        max-width: 374px;
+        font-size: 30px;
+    }
+}
+@media (max-width:540px){
+    #Services_titel {
+                max-width: 249px;
+        font-size: 22px;
+        left: 21%;
+    }
+}
+
+ .sof-Dev {
     position: relative;
     width: 1, 440px;
     height: 594px;
@@ -57,7 +182,7 @@ body {
     float: right;
 }
 
-.Dev-container {
+/*.Dev-container {
     position: relative;
     display: block;
     width: 554px;
@@ -554,7 +679,6 @@ body {
     letter-spacing: 0.5px;
     text-align: left;
     top: 83px;
-    /* border: 2px solid white; */
 }
 
 .SD-03 {
@@ -724,7 +848,6 @@ body {
 }
 
 .seniyer-cart {
-    /* border: 2px solid white; */
     width: 1299px;
     height: 1681px;
     padding: 0px 20px 0px 20px;
@@ -1085,14 +1208,12 @@ body {
     gap: 98px;
     top: 24.5px;
     left: 39.5px;
-    /* border: 2px solid white; */
 }
 
 .Footer-child2 {
     width: 481px;
     height: 255px;
     gap: 30px;
-    /* border: 2px solid red; */
 }
 
 .Footer-child2 .foot-lorem {
@@ -1108,7 +1229,6 @@ body {
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: left;
-    /* border: 2px solid black; */
 }
 
 .Footer-Service {
@@ -1118,7 +1238,6 @@ body {
     gap: 10px;
     top: -248px;
     left: 579px;
-    /* border: 2px solid white; */
     display: inline-block block;
 }
 
@@ -1152,7 +1271,6 @@ body {
     gap: 10px;
     top: -438px;
     left: 859px;
-    /* border: 2px solid white; */
     display: inline-block block;
 }
 
@@ -1185,7 +1303,6 @@ body {
     gap: 12px;
     top: -575px;
     left: 1094px;
-    /* border: 2px solid white; */
     display: inline-block block;
 }
 
@@ -1225,4 +1342,4 @@ body {
     top: 2774px;
     left: 467px;
     display: block;
-}
+} */
