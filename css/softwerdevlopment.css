@@ -110,21 +110,10 @@ body {
     font-size: 28px;
     /* Active color */
 }
-
-/* .title {
-    display: flex;
-    justify-content: center;
-    margin-top: 207px;
-    width: 88%;
-    float: right;
-    align-content: stretch;
-    align-items: center;
- } */
  .Service {
      display: flex;
      justify-content: center;
      align-items: center;
-    padding-right: 140px;
  }
  
  .Service p {
@@ -136,116 +125,84 @@ body {
     background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
     color: transparent;
     -webkit-background-clip: text;
-    border: 1px dashed #F0773A ;
  }
- 
-/* @media (max-width: 768px) {
-    #Services_titel {
-        max-width: 374px;
-        font-size: 30px;
-        top: -49px;
-        left: 25%;
-    }
+ .second_componet {
+    max-width: 100%;
+    height: 165px;
+    margin-top: 124px;
+    position: relative;
+    right: 20px;
+}
+#Softwer_titel {
+    border: 3px dashed rgba(232, 107, 49, 1);
+    font-family: Bricolage Grotesque;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 0px;
+    max-width: 30%;
+    position: relative;
+    left: 35%;
+    right: 35%;
+    top: -148px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+
+/* responshive css code start hear */
+ @media (max-width: 768px) {
+    #Softwer_titel{
+        max-width: 375px;
+        font-size: 25px;
+        left: 29%;
+    }
+    .second_componet {
+        max-width: 100%;
+        height: 0px;
+        margin-top: 215px;
+        position: relative;
+        right: 20px;
+    }
     .second_componet img {
         display: none;
     }
 }
 
 @media (max-width: 1024px) {
-    #Services_titel {
+    #Softwer_titel {
         max-width: 374px;
-        font-size: 30px;
+        font-size: 25px;
+        top: -123px;
     }
 }
 @media (max-width:540px){
-    #Services_titel {
-                max-width: 249px;
-        font-size: 22px;
-        left: 21%;
+    #Softwer_titel{
+        max-width: 300px;
+        font-size: 20px;
+    }
+} 
+@media (max-width:430px){
+    #Softwer_titel {
+        max-width: 60%;
+        font-size: 20px;
+    }
+}
+@media (max-width:375px) {
+    #Softwer_titel{
+        max-width: 100%;
+        font-size: 24px;
+        position: relative;
+        left: 133px;
     }
 }
 
- .sof-Dev {
-    position: relative;
-    width: 1, 440px;
-    height: 594px;
-    top: 340px;
-    padding: 0px 100px 0px 100px;
-    display: block;
-}
 
-.img1 {
-    width: 541px;
-    height: 594px;
-    top: 0px;
-    float: right;
-} */
-
-/*.Dev-container {
-    position: relative;
-    display: block;
-    width: 554px;
-    height: 207px;
-    gap: 30px;
-    top: 195.5px;
-}
-
-.Dev-title {
-    position: relative;
-    color: white;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 52px;
-    top: 0px;
-}
-
-.Dev-points {
-    display: block;
-    position: relative;
-    width: 454.48px;
-    height: 112px;
-    gap: 50px;
-    top: 40px;
-}
-
-.Dev-point1 {
-    width: 216.48px;
-    height: 112px;
-}
-
-.service-list {
-    list-style: none;
-    padding: 0;
-}
-
-.service-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.service-item:last-child {
-    margin-bottom: 0;
-}
-
-.service-icon {
-    width: 15px;
-    height: 15px;
-    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.Dev-point2 {
-    position: relative;
-    width: 196px;
-    height: 112px;
-    float: right;
-    top: -127px;
-}
-
-.explain-work {
+ .explain-work {
     width: 1063px;
     height: 778.75px;
     top: 1330px;
@@ -317,6 +274,7 @@ body {
     line-height: 36px;
     text-align: left;
     position: relative;
+    color: white;
 }
 
 .cart1-text2 {
@@ -331,10 +289,10 @@ body {
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: left;
-
+    color: white;
 }
 
-.line {
+.line0{
     position: absolute;
     width: 268px;
     height: 0px;
@@ -372,6 +330,7 @@ body {
     line-height: 36px;
     text-align: left;
     position: relative;
+    color: white;
 }
 
 .cart2-text2 {
@@ -386,6 +345,7 @@ body {
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: left;
+    color: white;
 }
 
 .line1 {
@@ -476,6 +436,7 @@ body {
     line-height: 36px;
     text-align: left;
     position: relative;
+    color: white;
 }
 
 .cart4-text2 {
@@ -490,6 +451,7 @@ body {
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: left;
+    color: white;
 }
 
 .cart5 {
@@ -516,6 +478,7 @@ body {
     line-height: 36px;
     text-align: left;
     position: relative;
+    color: white;
 }
 
 .cart5-text2 {
@@ -530,6 +493,7 @@ body {
     line-height: 24px;
     letter-spacing: 0.5px;
     text-align: left;
+    color: white;
 }
 
 .box-2 {

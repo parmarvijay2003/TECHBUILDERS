@@ -18,7 +18,7 @@ body {
     margin-right: 20px;
     margin-top: 20px;
 }
-
+/* navbar css code start hear */
 .navbar {
     border: 2px solid transparent;
     border-radius: 10px;
@@ -108,8 +108,10 @@ body {
     background-clip: text;
     color: transparent;
     font-size: 28px;
-    /* Active color */
 }
+
+/* navbar css code end hear */
+
 .second_componet {
     max-width: 100%;
     height: 165px;
@@ -136,7 +138,7 @@ body {
     top: -148px;
     left: 42%;
 }
-/* brand componet css */
+/* software devlopment  componet css start */
 #brand {
     font-size: 45px;
     font-weight: 700px;
@@ -242,7 +244,9 @@ body {
     height: 112px;
     float: right;
 }
+/* software devlopment  componet css end */
 
+/* softwear Devlopment  portfolio componet css start hear */
 .portfolio-title {
     color: white;
     font-family: Bricolage Grotesque;
@@ -262,6 +266,7 @@ body {
     line-height: 52px;
     align-items: center;
     text-align: center;
+    padding-top: 65px;
 }
 
 .portfolio {
@@ -374,8 +379,9 @@ body {
     height: 20px;
     color: white;
 }
+ /* softwear Devlopment  portfolio componet css start hear */
 
-
+/* gradiend line start */
 .line {
     position: relative;
     max-width: 100%;
@@ -385,7 +391,9 @@ body {
     border-image-slice: 1;
     border-image-source: linear-gradient(270deg, rgba(232, 107, 49, 0) 0%, rgba(134, 53, 15, 0.6) 50.38%, rgba(232, 107, 49, 0) 100%);
 }
+/* gradiend line start */
 
+/* Graphic Design componet start hear */
 .game-Dev-points {
     display: flex;
     position: relative;
@@ -429,6 +437,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+/* Graphic Design componet end hear */
 
 footer {
     background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
@@ -518,4 +527,679 @@ footer {
     text-align: left;
 
 }
+/* responshive css code start  */
+@media (max-width:375px) {
+    #Services_titel{
+        max-width: 50%;
+        font-size: 24px;
+    }
+}
+@media (max-width:430px) {
 
+    #Services_titel{
+        max-width: 40%;
+        font-size: 28px;
+    }
+    body {
+        margin: 0px;
+        margin-top: 21px;
+    }
+
+    .title {
+        max-width: 390px;
+    }
+
+    .navbar::before {
+        content: "";
+        position: absolute;
+        background: none;
+        border: 2px black;
+    }
+
+    #logo {
+        max-width: 100px;
+    }
+
+    .navbar {
+        position: relative;
+        background: none;
+        left: 1px;
+        right: -9px;
+        /* margin-left: 40px;
+    margin-right: 0px; */
+    }
+
+    .container-fluid {
+        position: relative;
+        margin-right: 0px;
+        margin-left: 20px;
+        min-width: 430px;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        position: relative;
+        left: 7px;
+        right: 19px;
+    }
+
+    .navbar-nav {
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 5px;
+        background: linear-gradient(black, black) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+        width: 100vh;
+        padding-left: 20px;
+
+    }
+
+    .dropdown-item {
+        font-size: 16px;
+    }
+
+    .dropdown-item {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .nav-item {
+        font-size: 24px;
+        font-weight: 400px;
+    }
+
+    .nav-link {
+        font-size: 24px;
+        font-weight: 400;
+        padding: 0px;
+    }
+
+    .dropdown-menu {
+        padding: 0px;
+        border: 3px solid transparent;
+        border-radius: 5px;
+        background: linear-gradient(black, black) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+        margin-right: 20px;
+    }
+
+    #navbarDropdown {
+        font-size: 24px;
+        font-weight: 400px;
+    }
+
+    .navbar-nav {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-width: 239px;
+    }
+
+    .nav-link.active {
+        background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+        /* Active color */
+    }
+
+    /* brand componet css */
+    .title {
+        position: relative;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        max-width: 336px;
+        min-height: 72px;
+        left: 50px;
+        margin-top: 20px;
+    }
+
+    #brand {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .brand {
+        min-width: 200px;
+        position: relative;
+        padding: 0px;
+        left: 116px;
+        margin-top: 20px;
+    }
+
+    #text {
+        position: relative;
+        font-family: Bricolage Grotesque;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        left: 0px;
+        right: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        min-width: 390px;
+        min-height: 96px;
+        margin-top: 20px;
+    }
+
+    .bt {
+        position: static;
+        font-size: 20px;
+        font-weight: 700;
+        min-width: 190px;
+        left: 40px;
+        margin-top: 20px;
+    }
+
+    .componet {
+        display: flex;
+        justify-items: center;
+        max-width: 378px
+    }
+
+    .componet2 {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        min-width: 378px;
+        min-height: 372px;
+        padding-top: 20px;
+    }
+
+    #brand_svg {
+        left: 30px;
+        right: 30px;
+        position: relative;
+        min-width: 355px;
+        margin-top: 20px;
+    }
+
+    #arrow {
+        min-width: 28px;
+        height: 20px;
+    }
+
+    .Dev-points {
+        top: 0px;
+        left: 0px;
+    }
+
+    .title {
+        padding-top: 40px;
+    }
+
+    .Dev-point2 {
+        left: 10px;
+        position: relative;
+    }
+    #Services_titel{
+        max-width: 30%;
+    }
+    body {
+        margin: 0px;
+        margin-top: 21px;
+    }
+
+    .title {
+        max-width: 390px;
+    }
+
+    .navbar::before {
+        content: "";
+        position: absolute;
+        background: none;
+        border: 2px black;
+    }
+
+    #logo {
+        max-width: 100px;
+    }
+
+    .navbar {
+        position: relative;
+        background: none;
+        left: 1px;
+        right: -9px;
+        /* margin-left: 40px;
+    margin-right: 0px; */
+    }
+
+    .container-fluid {
+        position: relative;
+        margin-right: 0px;
+        margin-left: 20px;
+        min-width: 430px;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        position: relative;
+        left: 7px;
+        right: 19px;
+    }
+
+    .navbar-nav {
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 5px;
+        background: linear-gradient(black, black) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+        width: 100vh;
+        padding-left: 20px;
+
+    }
+
+    .dropdown-item {
+        font-size: 16px;
+    }
+
+    .dropdown-item {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .nav-item {
+        font-size: 24px;
+        font-weight: 400px;
+    }
+
+    .nav-link {
+        font-size: 24px;
+        font-weight: 400;
+        padding: 0px;
+    }
+
+    .dropdown-menu {
+        padding: 0px;
+        border: 3px solid transparent;
+        border-radius: 5px;
+        background: linear-gradient(black, black) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+        margin-right: 20px;
+    }
+
+    #navbarDropdown {
+        font-size: 24px;
+        font-weight: 400px;
+    }
+
+    .navbar-nav {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-width: 239px;
+    }
+
+    .nav-link.active {
+        background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+        /* Active color */
+    }
+
+    /* brand componet css */
+    .title {
+        position: relative;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        max-width: 336px;
+        min-height: 72px;
+        left: 50px;
+        margin-top: 20px;
+    }
+
+    #brand {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .brand {
+        min-width: 200px;
+        position: relative;
+        padding: 0px;
+        left: 116px;
+        margin-top: 20px;
+    }
+
+    #text {
+        position: relative;
+        font-family: Bricolage Grotesque;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        left: 0px;
+        right: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        min-width: 390px;
+        min-height: 96px;
+        margin-top: 20px;
+    }
+
+    .bt {
+        position: static;
+        font-size: 20px;
+        font-weight: 700;
+        min-width: 190px;
+        left: 40px;
+        margin-top: 20px;
+    }
+
+    .componet {
+        display: flex;
+        justify-items: center;
+        max-width: 378px
+    }
+
+    .componet2 {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        min-width: 378px;
+        min-height: 372px;
+        padding-top: 20px;
+    }
+
+    #brand_svg {
+        left: 30px;
+        right: 30px;
+        position: relative;
+        min-width: 355px;
+        margin-top: 20px;
+    }
+
+    #arrow {
+        min-width: 28px;
+        height: 20px;
+    }
+
+    .Dev-points {
+        top: 0px;
+        left: 0px;
+    }
+
+    .title {
+        padding-top: 40px;
+    }
+
+    .Dev-point2 {
+        left: 10px;
+        position: relative;
+    }
+}
+
+@media (max-width:540px) {
+    #Services_titel{
+        max-width: 30%;
+        font-size: 30px;
+    }
+
+    /* Your custom styles for small screens */
+    .title {
+        max-width: 390px;
+        padding-top: 40px;
+        left: 68px;
+    }
+
+    #logo {
+        max-width: 100px;
+    }
+
+    .nav-link.active {
+        background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 19px;
+    }
+
+    /* brand componet css */
+
+    .service-item {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .Dev-point1 {
+        position: relative;
+        left: 50px;
+    }
+
+    .Dev-point2 {
+        left: 10px;
+        position: relative;
+    }
+
+    .Dev-points {
+        top: 0px;
+        left: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #Services_titel{
+        max-width: 30%;
+    }
+    .second_componet {
+        max-width: 100%;
+        height: 0px;
+        margin-top: 215px;
+        position: relative;
+        right: 20px;
+    }
+    .second_componet img {
+        display: none;
+    }
+    .card {
+        padding-top: 50px;
+    }
+
+    .col1 {
+        padding-left: 8%;
+        padding-right: 4%;
+    }
+
+    .col2 {
+        padding-left: 4%;
+        padding-right: 8%;
+    }
+
+    .portfolio-bt1 {
+        margin-top: 20px;
+    }
+
+    .portfolio-bt2 {
+        margin-top: 20px;
+    }
+
+    .card-text {
+        font-family: Bricolage Grotesque;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+    }
+
+    .card1-title {
+        color: #007DFC;
+        font-family: Bricolage Grotesque;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: left;
+        padding-bottom: 30px;
+    }
+
+    .card2-title {
+        color: #50B104;
+        font-family: Bricolage Grotesque;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: left;
+        padding-bottom: 30px;
+    }
+
+    .card1 {
+        padding-top: 50px;
+        color: white;
+    }
+
+    .card2 {
+        padding-top: 0%;
+        color: white;
+    }
+
+    .title2 {
+        font-family: Bricolage Grotesque;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .card1-title-social-media-cart {
+        font-size: 20px;
+    }
+    .service-item {
+        font-family: Bricolage Grotesque;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        text-align: left;
+
+    }
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .footer-logo,
+    .footer-links div {
+        margin-bottom: 20px;
+    }
+    footer{
+        margin-right: -20px;
+    }
+    .container{
+        margin-left: 0%;
+    }
+   
+   
+}
+@media (max-width: 767px) {
+    /* #Services_titel{
+        max-width: 30%;
+    } */
+    .title {
+        max-width: 490px;
+        font-size: 45px;
+        font-weight: 600;
+        display: none;
+    }
+    .Software-title{
+        max-width: 490px;
+        font-size: 45px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+    .text-light {
+        background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
+        color: transparent  !important;
+        -webkit-background-clip: text;
+    }
+    .componet2{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media(max-width:1040px) {
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .nav-link.active {
+        background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 20px;
+        /* Active color */
+    }
+
+    .Dev-point2 {
+        right: 50px;
+    }
+
+    .service-item {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .title {
+        max-width: 490px;
+        font-size: 29px;
+        font-weight: 600;
+        position: relative;
+        padding-top: 98px;
+        padding-right: 160px;
+    }
+
+    .title-graphic {
+        max-width: 545px;
+        font-size: 29px;
+        font-weight: 600;
+        position: relative;
+        padding-top: 98px;
+        padding-right: 88px;
+    }
+
+    .socilmidia-media-title {
+        font-size: 20px;
+        line-height: 23.44px;
+    }
+
+    .card1-title-social-media-cart {
+        font-size: 20px;
+    }
+
+    .service-icon {
+        padding-left: 15px;
+    }
+}
+
+@media(max-width:1140px) {
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .nav-link.active {
+        background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+
+        /* Active color */
+    }
+    footer{
+        margin-right: -20px;
+    }
+    .container{
+        margin-left: 0%;
+    }
+}
+/* responshive css code start  */
