@@ -17,7 +17,7 @@
 // }
 // addEventListener('load', main);
 function myFunction(x) {
-    x.classList.toggle("change");
+  x.classList.toggle("change");
 }
 // let click = document.getElementsByClassName('dropdown-menu');
 // let change_color = document.getElementById('navbarDropdown');
@@ -143,27 +143,46 @@ function myFunction(x) {
 var buttons = document.querySelectorAll(".nav-link");
 
 // Loop through each button and add click event
-buttons.forEach(function(button) {
-  button.addEventListener("click", function() {
+buttons.forEach(function (button) {
+  button.addEventListener("click", function () {
     // Remove 'active' class from all buttons
-    buttons.forEach(function(btn) {
+    buttons.forEach(function (btn) {
       btn.classList.remove("active");
     });
 
     // Add 'active' class to the clicked button
     this.classList.add("active");
   });
-}); var bu2= document.querySelectorAll('navbarDropdown');
-bu2.forEach(function(button) {
-    bu2.addEventListener("click", function() {
-      // Remove 'active' class from all buttons
-      bu2.forEach(function(btn) {
-        btn.classList.remove("active");
-      });
-  
-      // Add 'active' class to the clicked button
-      this.classList.add("active");
+}); var bu2 = document.querySelectorAll('navbarDropdown');
+bu2.forEach(function (button) {
+  bu2.addEventListener("click", function () {
+    // Remove 'active' class from all buttons
+    bu2.forEach(function (btn) {
+      btn.classList.remove("active");
     });
-  });
 
-  
+    // Add 'active' class to the clicked button
+    this.classList.add("active");
+  });
+});
+
+
+// card  profile:
+const scrollAmount = 270; // Adjust scroll amount based on profile width
+const profilesWrapper = document.getElementById('profilesWrapper');
+
+document.getElementById('nextBtn').addEventListener('click', function() {
+    profilesWrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+
+document.getElementById('prevBtn').addEventListener('click', function() {
+    profilesWrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+
+function scrollToProfile(index) {
+    const profile = document.getElementById(`profile-${index}`);
+    const profilePosition = profile.getBoundingClientRect().left;
+    const wrapperPosition = profilesWrapper.getBoundingClientRect().left;
+    const scrollTo = profilePosition - wrapperPosition + profilesWrapper.scrollLeft; // Calculate scroll position
+    profilesWrapper.scrollTo({ left: scrollTo, behavior: 'smooth' });
+}

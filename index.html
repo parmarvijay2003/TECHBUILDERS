@@ -1,90 +1,114 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Bricolage Grotesque' rel='stylesheet'>
-    <link rel="stylesheet" href="./style/style.css">
-    <title> Techbuilders</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Bricolage Grotesque' rel='stylesheet'>
+  <link rel="stylesheet" href="./style/style.css">
+  <title> Techbuilders</title>
+  <style>
+ .profiles-wrapper {
+            overflow-x: auto; /* Enables horizontal scrolling */
+            display: flex; /* Align profiles horizontally */
+            padding: 20px 0; /* Vertical padding for aesthetics */
+            scroll-behavior: smooth; /* Smooth scrolling behavior */
+        }
+        .profile-card {
+            min-width: 250px; /* Minimum width for profiles */
+            margin-right: 20px; /* Space between profiles */
+            flex: none; /* Prevent profiles from stretching */
+        }
+        .profiles-wrapper::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for a cleaner look */
+        }
+        .carousel-controls {
+            position: relative;
+            top: -50px; /* Adjust vertical position of arrows */
+        }
+</style>
 </head>
-<body> 
-  <!-- navbar to Started -->
-     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/assets/logo/svg/header-logo.svg" alt="techbuliders" srcset="" id="logo">
-            </a>
-            <button class="navbar-toggler ml-0 mr-0." type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars" style="color:white;"></i>
 
-            </button>
-            <div class="collapse navbar-collapse show" id="navbarSupportedContent">
-                <ul class="navbar-nav col-lg ms-auto mb-0 mb-lg-0 w-100 d-flex justify-content-end text-end float-end" id="n">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#"role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
-                            <i class="fa-solid fa-angle-down" id="icone"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#" id="h1">Game Development</a></li>
-                            <li><a class="dropdown-item" href="#" id="h2">Software Development</a></li>
-                            <li><a class="dropdown-item" href="#" id="h3">Barnding</a></li>
-                            <li><a class="dropdown-item" href="#" id="h4">Graphic Design</a></li>
-                            <li><a class="dropdown-item" href="#" id="h5">Product Engineering</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blogs</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> 
- <!-- first_componet Started brand -->
-    <div class="first_componet row g-0 align-items-center bg-black position-relative top-2">
-        <!-- Column for Text -->
-        <div class="brand col-md-6 order-md-1 order-2 mb-md-0 p-md-4 align-left">
-          <h5 class="title mt-0 text-light">
-            We Design Better Solution for your
-          </h5>
-          <div class="brand_titel">
-            <h5 class="mt-0" id="brand">brand</h5>
-          </div>
-          <p class="text-light" id="text">
-            Welcome to Techbuilders, where technology meets innovation.
-            We are a leading IT solutions provider, dedicated to delivering
-            cutting-edge solutions tailored to meet your business needs.
-          </p>
-          <button class="bt"> Get Started 
-            <img src="/assets/icons/svg/arrow.svg" alt=""id="arrow">
-          </button>
-        </div>
-        <!-- Column for Image -->
-        <div class="col-md-6 order-md-2 order-1 mb-md-0 p-md-4 align-right">
-          <img src="assets/images/svg/brand.svg" class="w-100" alt="brand" id="brand_svg">
-        </div>
+<body>
+  <!-- navbar to Started -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/logo/svg/header-logo.svg" alt="techbuliders" srcset="" id="logo">
+      </a>
+      <button class="navbar-toggler ml-0 mr-0." type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars" style="color:white;"></i>
+
+      </button>
+      <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+        <ul class="navbar-nav col-lg ms-auto mb-0 mb-lg-0 w-100 d-flex justify-content-end text-end float-end" id="n">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+              <i class="fa-solid fa-angle-down" id="icone"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#" id="h1">Game Development</a></li>
+              <li><a class="dropdown-item" href="#" id="h2">Software Development</a></li>
+              <li><a class="dropdown-item" href="#" id="h3">Barnding</a></li>
+              <li><a class="dropdown-item" href="#" id="h4">Graphic Design</a></li>
+              <li><a class="dropdown-item" href="#" id="h5">Product Engineering</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+        </ul>
       </div>
- 
-    <img src="/assets/icons/svg/left-frame.svg" alt=""style="max-width:20%;" id="l_frame">
+    </div>
+  </nav>
+  <!-- first_componet Started brand -->
+  <div class="first_componet row g-0 align-items-center bg-black position-relative top-2">
+    <!-- Column for Text -->
+    <div class="brand col-md-6 order-md-1 order-2 mb-md-0 p-md-4 align-left">
+      <h5 class="title mt-0 text-light">
+        We Design Better Solution for your
+      </h5>
+      <div class="brand_titel">
+        <h5 class="mt-0" id="brand">brand</h5>
+      </div>
+      <p class="text-light" id="text">
+        Welcome to Techbuilders, where technology meets innovation.
+        We are a leading IT solutions provider, dedicated to delivering
+        cutting-edge solutions tailored to meet your business needs.
+      </p>
+      <button class="bt"> Get Started
+        <img src="/assets/icons/svg/arrow.svg" alt="" id="arrow">
+      </button>
+    </div>
+    <!-- Column for Image -->
+    <div class="col-md-6 order-md-2 order-1 mb-md-0 p-md-4 align-right">
+      <img src="assets/images/svg/brand.svg" class="w-100" alt="brand" id="brand_svg">
+    </div>
+  </div>
+
+  <img src="/assets/icons/svg/left-frame.svg" alt="" style="max-width:20%;position: relative;left:-20px;" id="l_frame">
 
 
   <!-- second_componet Started what we do -->
@@ -92,54 +116,63 @@
     <h5 class="mt-3" id="Services_titel">What We Do !!</h5>
     <section class="service-section">
       <div class="container">
-          <div class="image-container">
-              <img src="/assets/images/svg/servicse.svg" alt="Illustration of tech services">
-          </div>
-          <div class="content-container">
-              <h1>We Can Assist You With a <span class="highlight">Variety Of Service</span></h1>
-              <p>Welcome to Techbuilders, where technology meets innovation. 
-              We are a leading IT solutions provider, dedicated to delivering cutting-edge solutions tailored to meet your business needs.</p>
-          </div>
+        <div class="image-container">
+          <img src="/assets/images/svg/servicse.svg" alt="Illustration of tech services">
+        </div>
+        <div class="content-container">
+          <h1>We Can Assist You With a <span class="highlight">Variety Of Service</span></h1>
+          <p>Welcome to Techbuilders, where technology meets innovation.
+            We are a leading IT solutions provider, dedicated to delivering cutting-edge solutions tailored to meet your
+            business needs.</p>
+        </div>
       </div>
-  </section>
+    </section>
   </div>
- <!-- services card start  -->
- <div class="container py-5">
+  <!-- services card start  -->
+  <div class="container py-5">
     <div class="row">
       <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
         <div class="card h-100 text-center" style="background: rgba(232, 107, 49, 0.07);">
           <div class="card-body">
-            <div class="circle"style="background: rgba(232, 107, 49, 0.1);">
+            <div class="circle" style="background: rgba(232, 107, 49, 0.1);">
               <div class="text-center">
                 <img src="/assets/icons/svg/graphic-design.svg" class="rounded" alt="...">
               </div>
             </div>
             <h2 class="card-title" style="color: rgba(232, 107, 49, 1);">Graphic Designing</h2>
-            <p class="card-text text-light">Graphic design is the art of visual communication, combining images, text, and elements to convey messages effectively, creating captivating and impactful designs for various purposes.</p>
-            <button class="btn btn-primary rounded-pill" style="background: rgba(232, 107, 49, 0.07);border: 1px solid rgba(232, 107, 49, 1);color:rgba(232, 107, 49, 1)">Read More
+            <p class="card-text text-light">Graphic design is the art of visual communication, combining images, text,
+              and elements to convey messages effectively, creating captivating and impactful designs for various
+              purposes.</p>
+            <button class="btn btn-primary rounded-pill"
+              style="background: rgba(232, 107, 49, 0.07);border: 1px solid rgba(232, 107, 49, 1);color:rgba(232, 107, 49, 1)">Read
+              More
               <img src="/assets/icons/svg/graphic-design-arrow.svg" class="rounded" alt="...">
             </button>
           </div>
         </div>
       </div>
-  
+
       <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
         <div class="card h-100 text-center" style="background: rgba(255, 190, 85, 0.07);">
           <div class="card-body">
             <div class="circle" style="background: rgba(255, 190, 85, 0.1);">
               <div class="text-center">
-                <img src="/assets/icons/svg/cyber-security.svg"class="rounded" alt="...">
+                <img src="/assets/icons/svg/cyber-security.svg" class="rounded" alt="...">
               </div>
             </div>
             <h2 class="card-title" style="color: rgba(255, 190, 85, 1);">Cyber Security</h2>
-            <p class="card-text text-light">Graphic design is the art of visual communication, combining images, text, and elements to convey messages effectively, creating captivating and impactful designs for various purposes.</p>
-            <button class="btn btn-primary rounded-pill" style="background: rgba(255, 190, 85, 0.07);border: 1px solid rgba(255, 190, 85, 1);color: rgba(255, 190, 85, 1);">Read More
+            <p class="card-text text-light">Graphic design is the art of visual communication, combining images, text,
+              and elements to convey messages effectively, creating captivating and impactful designs for various
+              purposes.</p>
+            <button class="btn btn-primary rounded-pill"
+              style="background: rgba(255, 190, 85, 0.07);border: 1px solid rgba(255, 190, 85, 1);color: rgba(255, 190, 85, 1);">Read
+              More
               <img src="/assets/icons/svg/graphic-design-arrow.svg" class="rounded" alt="...">
             </button>
           </div>
         </div>
       </div>
-  
+
       <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
         <div class="card h-100 text-center" style="background: rgba(79, 160, 149, 0.07);">
           <div class="card-body">
@@ -149,14 +182,18 @@
               </div>
             </div>
             <h2 class="card-title" style="color: rgba(79, 160, 149, 1);">Branding</h2>
-            <p class="card-text text-light">Graphic design is the art of visual communication, combining images, text, and elements to convey messages effectively, creating captivating and impactful designs for various purposes.</p>
-            <button class="btn btn-primary rounded-pill" style="background: rgba(79, 160, 149, 0.07);border: 1px solid rgba(79, 160, 149, 1);color: rgba(79, 160, 149, 1);">Read More
+            <p class="card-text text-light">Graphic design is the art of visual communication, combining images, text,
+              and elements to convey messages effectively, creating captivating and impactful designs for various
+              purposes.</p>
+            <button class="btn btn-primary rounded-pill"
+              style="background: rgba(79, 160, 149, 0.07);border: 1px solid rgba(79, 160, 149, 1);color: rgba(79, 160, 149, 1);">Read
+              More
               <img src="/assets/icons/svg/brandin_arrow.svg" class="rounded" alt="...">
             </button>
           </div>
         </div>
-      </div> 
-      
+      </div>
+
       <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
         <div class="card h-100 text-center" style="background: rgba(64, 123, 255, 0.07);">
           <div class="card-body">
@@ -166,22 +203,247 @@
               </div>
             </div>
             <h2 class="card-title" style="color: rgba(64, 123, 255, 1);">digital marketing</h2>
-            <p class="card-text text-light">Graphic design is the art of visual communication, combining images, text, and elements to convey messages effectively, creating captivating and impactful designs for various purposes.</p>
-            <button class="btn btn-primary rounded-pill" style="background: rgba(64, 123, 255, 0.07);background: rgba(64, 123, 255, 0.07);color: rgba(64,123,255,1)">Read More<img src="/assets/icons/svg/digaital-marketing-Shape.svg" class="rounded" alt="...">
+            <p class="card-text text-light">Graphic design is the art of visual communication, combining images, text,
+              and elements to convey messages effectively, creating captivating and impactful designs for various
+              purposes.</p>
+            <button class="btn btn-primary rounded-pill"
+              style="background: rgba(64, 123, 255, 0.07);background: rgba(64, 123, 255, 0.07);color: rgba(64,123,255,1)">Read
+              More<img src="/assets/icons/svg/digaital-marketing-Shape.svg" class="rounded" alt="...">
             </button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <button class="btn rounded-pill text-light" style="background: linear-gradient(black, black) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;  border: 2px solid transparent;  min-width: 238px; min-height: 76px; font-size: 28px;float: right; right:100px;position: relative;">Explore More<img src="/assets/icons/svg/arrow.svg" class="rounded" alt="...">
+  <button class="btn rounded-pill text-light"
+    style="background: linear-gradient(black, black) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;  border: 2px solid transparent;  min-width: 238px; min-height: 76px; font-size: 28px;float: right; right:100px;position: relative;align-items: center;display: flex;gap:20px">Explore
+    More<img src="/assets/icons/svg/arrow.svg" class="rounded" alt="...">
   </button>
-  <h5 class="mt-3" style="top:140px;position: relative;padding-left: 9px;" id="Services_titel">Our Work</h5>
+  <img src="/assets/icons/svg/right-frame.svg" alt="" class="right-frame">
 
-   <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+
+
+  <!-- our work-card -->
+  <section class="our-work">
+    <h5 class="mt-3" id="our_titel">Our work</h5>
+    <p id="our">We co-create and invest in high-potential <span class="highlight">Startups !!</span></p>
+    <div class="work-container">
+      <div class="work-card">
+        <h3 id="shoe-spot">Shoe Spot</h3>
+        <img src="/assets/images/svg/shoe-spot.svg" alt="Shoe Spot" class="work-image">
+        <p id="work-card-text">Welcome to Techbuilders, where technology meets innovation.
+          We are a leading IT solutions provider, dedicated to delivering
+          cutting-edge solutions tailored to meet your business needs..</p>
+        <button class="btn btn-primary rounded-pill"
+          style="max-width: max-content;float: left;font-size:22px;font-weight: 700; background: rgba(0, 125, 252, 1);border: 1px solid rgba(79, 160, 149, 1);color: white;">Explore
+          More
+          <img src="/assets/icons/svg/white-arrow.svg" class="rounded" alt="...">
+        </button>
+      </div>
+
+      <div class="work-card">
+        <h3 id="Rajvee-Digital" ;>Rajvee Digital</h3>
+        <img src="/assets/images/svg/rajvee-digital.svg" alt="Rajvee Digital" class="work-image">
+        <p id="work-card-text">Welcome to Techbuilders, where technology meets innovation.
+          We are a leading IT solutions provider, dedicated to delivering
+          cutting-edge solutions tailored to meet your business needs..</p>
+        <button class="btn btn-primary rounded-pill"
+          style="max-width: max-content;float: left;font-size:22px;font-weight: 700; background: rgba(114, 136, 250, 1);border: 1px solid rgba(79, 160, 149, 1);color:white;">Explore
+          More
+          <img src="/assets/icons/svg/white-arrow.svg" class="rounded" alt="...">
+        </button>
+      </div>
+
+      <div class="work-card">
+        <h3 id="Ashpveda"style="color: rgba(0, 148, 135, 1);">Ashpveda</h3>
+        <img src="/assets/images/svg/ashpdeva.svg" alt="Ashpveda" class="work-image">
+        <p id="work-card-text">Welcome to Techbuilders, where technology meets innovation.
+          We are a leading IT solutions provider, dedicated to delivering
+          cutting-edge solutions tailored to meet your business needs...</p>
+        <button class="btn btn-primary rounded-pill"style="max-width: max-content;float: left;font-size:22px;font-weight: 700;background:rgba(0, 148, 135, 1);border: 1px solid rgba(79, 160, 149, 1);color:white;">Explore
+          More
+          <img src="/assets/icons/svg/white-arrow.svg" class="rounded" alt="...">
+        </button>
+      </div>
+
+      <div class="work-card">
+        <h3 id="Befit"style="color:rgba(106, 240, 1, 1);">Befit</h3>
+        <img src="/assets/images/svg/befit.svg" alt="Befit" class="work-image">
+        <p id="work-card-text">Welcome to Techbuilders, where technology meets innovation.
+          We are a leading IT solutions provider, dedicated to delivering
+          cutting-edge solutions tailored to meet your business needs..</p>
+        <button class="btn btn-primary rounded-pill"style=" max-width: max-content;float: left;font-size:22px;font-weight: 700;background-color:rgba(106, 240, 1, 1);border: 1px solid rgba(79, 160, 149, 1);color: white;">Explore
+          More
+          <img src="/assets/icons/svg/white-arrow.svg" class="rounded" alt="...">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <button class="btn rounded-pill text-light"
+    style="display: flex;gap:20px;background: linear-gradient(black, black) padding-box,linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;border: 2px solid transparent;min-width: 238px;min-height: 76px;font-size: 28px;position: relative; top:551px;align-items: center;margin: auto;">Check
+    All Projects<img src="/assets/icons/svg/arrow.svg" class="rounded" alt="...">
+  </button>
+
+  <br>
+  <img src="/assets/icons/svg/right-frame.svg" style="float:right;position:relative;top: 690px;"alt="" id="l_frame">
+
+  <!-- our Achievements cards -->
+  <section class="Achievements" style=" color: white">
+    <h5 class="mt-0" id="our_titel" style="top: 730px; min-width: fit-content">Our Achievements </h5>
+
+    <div class="card-wrapper">
+      <div class="our_card">
+        <img src="/assets/icons/svg/project-Icon.svg" alt="">
+        <h2 class="our_text">2.5k+</h2>
+        <p class="our_paragraph">Project Completed</p>
+      </div>
+      
+      <div class="vertical-line"></div>
+      
+      <div class="our_card">
+        <img src="/assets/icons/svg/years-experience.svg" alt="">
+        <h2 class="our_text">10+</h2>
+        <p class="our_paragraph">Years Of Experience</p>
+      </div>
+    
+      <div class="vertical-line"></div>
+      
+      <div class="our_card">
+        <img src="/assets/icons/svg/happy-customers.svg" alt="">
+        <h2 class="our_text">30+</h2>
+        <p class="our_paragraph">Highly Experience Team</p>
+      </div>
+    
+      <div class="vertical-line"></div>
+      
+      <div class="our_card">
+        <img src="/assets/icons/svg/happy-customers.svg" alt="">
+        <h2 class="our_text">5k</h2>
+        <p class="our_paragraph">Happy Customers</p>
+      </div>
+    </div>
+      </div>
+  </section>
+<!-- Testimonials-->
+
+<h5 class="mt-3" id="our_titel" style="top:970px;position: relative;">Testimonials</h5>
+<img src="/assets/icons/svg/left-frame.svg" alt="" style="max-width:20%;position: relative;left:-20px;top:860px" id="l_frame">
+
+  <!-- <div class="slider-container"> -->
+    <!-- Card Container -->
+    <!-- <div class="profiles-cards">
+        <div class="profile-card" data-card="0">
+            <div class="profile"><img src="/assets/images/firstprofile-img.svg" alt="">
+              <h2 id="profile-text">Hannah Schmitt</h2></div>
+             <p class="position">Lead Designer</p>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse  sed magna eget nibh in turpis. Consequat duis </p>
+        </div>
+        <div class="profile-card" data-card="1">
+          <div class="profile"><img src="/assets/images/secondprofile-img.svg" alt="">
+            <h2 id="profile-text">Anella Schmitt</h2></div>
+            <p class="position">Lead Designer</p>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse  sed magna eget nibh in turpis. Consequat duis </p>
+        </div>
+        <div class="profile-card" data-card="2">
+          <div class="profile"><img src="/assets/images/thirdprofile-img.svg" alt="">
+            <h2 id="profile-text">Swetllana Schmitt</h2></div>
+            <p class="position">Lead Designer</p>
+            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse  sed magna eget nibh in turpis. Consequat duis </p>
+        </div>
+        
+    </div> -->
+
+    <!-- Right Arrow -->
+    <!-- <button id="leftArrow" class="arrow">&#10094;</button>
+    <button id="rightArrow" class="arrow">&#10095;</button>
+</div> -->
+
+<!-- Radio buttons for navigation -->
+<!-- <div class="radio-buttons">
+    <input type="radio" name="card" id="radio1" data-index="0" checked>
+    <input type="radio" name="card" id="radio2" data-index="1" checked>
+    <input type="radio" name="card" id="radio3" data-index="2" checked>
+   
+</div> -->
+ 
+ <!-- Contact us -->
+<section>
+  <div class="mt-9" style="margin-top: 920px;">
+    <div class="position-relative">
+        <div class="profiles-wrapper" id="profilesWrapper">
+            <div class="profile-card" id="profile-0">
+              <img src="assets/images/firstprofile-img.svg" class="rounded-circle" alt="...">
+                <div class="body">
+                    <h5 class="title">Hannah Schmitt</h5>  
+                    <p class="text">lead designer </p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse  sed magna eget nibh in turpis. Consequat duis </p>
+                </div>
+            </div>
+            <div class="profile-card" id="profile-1">
+              <img src="/assets/images/secondprofile-img.svg" class="rounded-circle" alt="...">
+                <div class="body">
+                    <h5 class="title">Anella Schmitt</h5>
+                    <p class="text">lead designer </p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse  sed magna eget nibh in turpis. Consequat duis </p>
+                </div>
+            </div>
+            <div class="profile-card" id="profile-2">
+              <img src="/assets/images/thirdprofile-img.svg" class="rounded-circle" alt="...">
+
+                <div class="body">
+                    <h5 class="title">Swetllana Schmitt</h5>  
+                    <p class="text">lead designer </p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse  sed magna eget nibh in turpis. Consequat duis </p>
+                </div>
+            </div>
+            <div class="profile-card" id="profile-3">
+            
+                <img src="/assets/images/secondprofile-img.svg" class="rounded-circle" alt="...">
+                <div class="body">
+                    <h5 class="title">Anella Schmitt</h5>
+                    <p class="text">lead designer </p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse  sed magna eget nibh in turpis. Consequat duis </p>
+                </div>
+            </div>
+            <div class="profile-card" id="profile-4">
+              <img src="/assets/images/secondprofile-img.svg" class="rounded-circle" alt="...">
+              <div class="body">
+                  <h5 class="title">Anella Schmitt</h5>
+                  <p class="text">lead designer </p>
+                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse  sed magna eget nibh in turpis. Consequat duis </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+            <button class="btn btn-primary" id="prevBtn" style="position: absolute; left: -50px;">&#10094;</button>
+            <button class="btn btn-primary" id="nextBtn" style="position: absolute; right: -50px;">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="carousel-indicators mt-3">
+        <input type="radio" name="carousel" id="radio1" checked onclick="scrollToProfile(0)">
+        <label for="radio1" class="me-2">1</label>
+        <input type="radio" name="carousel" id="radio2" onclick="scrollToProfile(1)">
+        <label for="radio2" class="me-2">2</label>
+        <input type="radio" name="carousel" id="radio3" onclick="scrollToProfile(2)">
+        <label for="radio3" class="me-2">3</label>
+        <input type="radio" name="carousel" id="radio4" onclick="scrollToProfile(3)">
+        <label for="radio4" class="me-2">4</label>
+        <input type="radio" name="carousel" id="radio5" onclick="scrollToProfile(4)">
+        <label for="radio5">5</label>
+    </div>
+</div>
+ 
+  </section>
+ 
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
-
-
-</html>     
+</html>
