@@ -386,9 +386,9 @@
             grid-template-columns: 1fr;
             /* Default to 1 card per row on small screens */
             gap: 30px;
-            padding: 0 20px;
+            padding: 0 20px; 
             position: relative;
-            top: -256px;
+            top:-256px;
         }
 
         .work-card {
@@ -481,8 +481,7 @@
             position: relative;
             top: -289px;
         }
-
-        .profile-card {
+        .profile-card{
             text-align: center;
         }
 
@@ -557,75 +556,74 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            top: 900px;
+            top:900px; 
             margin: auto;
         }
-
-        .profiles-cards {
+        
+        .profiles-cards{
             display: flex;
             transition: transform 0.5s ease-in-out;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            gap: 30px;
-            max-width: 100%;
+            justify-content: center;  
+            text-align:center; 
+            align-items:center;
+            gap:30px;
+            max-width: 100%; 
             overflow-y: auto;
 
         }
+        
 
-
-        .profile-card {
-            border: 1px solid transparent;
-            border-radius: 20px;
-            background: linear-gradient(black, black) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
-            padding: 20px;
-            border-bottom: 10px solid transparent;
-            border-right: 10px solid transparent;
-            max-width: auto;
+        .profile-card{
+                border: 1px solid transparent;
+                border-radius: 20px;
+                background: linear-gradient(black, black) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+                padding: 20px;
+                border-bottom: 10px solid transparent;
+                border-right: 10px solid transparent;
+                max-width: auto;
         }
-
-
+  
+        
         .position {
             font-size: 14px;
             color: white;
             font-weight: 700;
 
         }
-
-        #profile-text {
+        #profile-text{
             font-size: 22px;
             font-weight: 400;
         }
-
+        
         .quote {
             font-size: 16px;
             margin-top: 10px;
             font-weight: 400;
 
         }
-
+        
         .radio-buttons {
             display: flex;
             justify-content: center;
         }
-
+       
         input[type="radio"] {
-            background-color: #FB8D48;
+            background-color:#FB8D48;
             height: 20px;
             width: 20px;
-            border: 9px solid #ED7136;
-            accent-color: rgba(251, 141, 72, 1);
-        }
+            border:9px solid #ED7136;
+            accent-color: rgba(251, 141, 72, 1) ;
+            } 
 
         .radio-buttons input {
             margin: 0 10px;
-            cursor: pointer;
+            cursor: pointer; 
             top: 962px;
             position: relative;
-            border: 9px solid #ED7136;
-            accent-color: rgba(251, 141, 72, 1);
+            border:9px solid #ED7136;
+            accent-color: rgba(251, 141, 72, 1) ;
         }
-
+      
         .arrow {
             position: absolute;
             top: 120%;
@@ -634,55 +632,42 @@
             border: none;
             font-size: 30px;
             cursor: pointer;
-            color: #ff8c00;
+            color: #ff8c00; 
         }
-
+        
         #leftArrow {
             left: 50px;
         }
-
+        
         #rightArrow {
             right: 50px;
         }
-
-        .profile {
+        .profile{
             display: inline-block;
         }
 
 
         .scrolling-wrapper {
-            overflow-x: auto;
-            /* Enables horizontal scrolling */
-            display: flex;
-            /* Align cards horizontally */
-            padding: 20px 0;
-            /* Vertical padding for aesthetics */
-            scroll-behavior: smooth;
-            /* Smooth scrolling behavior */
+            overflow-x: auto; /* Enables horizontal scrolling */
+            display: flex; /* Align cards horizontally */
+            padding: 20px 0; /* Vertical padding for aesthetics */
+            scroll-behavior: smooth; /* Smooth scrolling behavior */
         }
-
         .card {
-            min-width: 250px;
-            /* Minimum width for cards */
-            margin-right: 20px;
-            /* Space between cards */
-            flex: none;
-            /* Prevent cards from stretching */
+            min-width: 250px; /* Minimum width for cards */
+            margin-right: 20px; /* Space between cards */
+            flex: none; /* Prevent cards from stretching */
         }
-
         .scrolling-wrapper::-webkit-scrollbar {
-            display: none;
-            /* Hide scrollbar for a cleaner look */
+            display: none; /* Hide scrollbar for a cleaner look */
         }
-
         .carousel-controls {
             position: relative;
-            top: -50px;
-            /* Adjust vertical position of arrows */
+            top: -50px; /* Adjust vertical position of arrows */
         }
-
-
-
+           
+        
+        
         /* .profiles {
             display: flex;
             justify-content: center;
@@ -734,6 +719,8 @@
                 font-weight: 600;
                 display: grid;
                 margin: auto;
+
+
             }
 
             .content-container p {
@@ -1205,13 +1192,6 @@
                 position: relative;
                 top: -289px;
             }
-        }
+                   }
 
-        .profile-card {
-            max-width: fit-content;
-            padding: 20px;
-        }
-
-        .card-body {
-            max-width: fit-content;
-        }
+                  
