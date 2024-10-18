@@ -17,6 +17,7 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+    color: white;
 }
 
 .navbar {
@@ -110,13 +111,14 @@ body {
     font-size: 28px;
     /* Active color */
 }
- .Service {
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
- 
- .Service p {
+
+.Service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Service p {
     font-family: Bricolage Grotesque;
     font-size: 45px;
     font-weight: 700;
@@ -125,18 +127,113 @@ body {
     background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
     color: transparent;
     -webkit-background-clip: text;
- }
- .second_componet {
+}
+
+/* navbaar commponent end */
+
+/* softwer component start */
+.componet {
+    display: flex;
+    justify-items: center;
+  }
+
+  .componet2 {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    min-height: 372px;
+    padding-top: 20px;
+    font-size: 1.2vw;
+  }
+
+  .title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+
+  }
+
+  .Software-title {
+    display: none;
+  }
+
+  .Dev-points {
+    display: flex;
+    position: relative;
+    height: 112px;
+    gap: 50px;
+    top: 40px;
+    color: white;
+  }
+
+  .service-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .service-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .service-icon {
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+/* softwer component end */
+.custom-card {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    position: relative;
+}
+
+.custom-card h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.custom-card p {
+    font-size: 1rem;
+}
+
+.custom-card .icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ff7700;
+    /* Icon color */
+}
+
+/* Centerline styling */
+.custom-card.border-middle {
+    border-right: 2px solid #ff7700;
+    /* Orange centerline */
+}
+
+.first_title_componet {
     max-width: 100%;
     height: 165px;
     margin-top: 124px;
-    position: relative;
-    right: 20px;
 }
+
 #Softwer_titel {
     border: 3px dashed rgba(232, 107, 49, 1);
     font-family: Bricolage Grotesque;
-    font-size: 45px;
+    font-size: 2vw;
     font-weight: 700;
     text-align: center;
     background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
@@ -151,27 +248,98 @@ body {
     top: -148px;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
+
+
+.our_work_header {
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#our {
+    font-size: 45px;
+    color: white;
+    max-width: 40%;
+    left: 40px;
+    text-align: left;
+    top: -80px;
+    position: relative;
+}
+
+#our_titel {
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border: 2px dashed#FB8D48;
+    max-width: max-content;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+}
+
+.profile-card {
+    text-align: center;
+}
+
+.title-number {
+    font-family: Arial;
+    font-size: 160px;
+    font-weight: 700;
+    line-height: 183.98px;
+    text-align: left;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E86B31;
+}
+
+.title-01 {
+    margin-top: 55px;
+}
+
+.pera1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 52px;
+    background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
+    color: transparent;
+    -webkit-background-clip: text;
+    align-items: center;
+    position: relative;
+}
+
+.detials {
+    gap: 10px;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: white;
+
+}
+
+.text-title-box01 {
+    display: none;
+}
+.text-title-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+}
 
 /* responshive css code start hear */
- @media (max-width: 768px) {
-    #Softwer_titel{
-        max-width: 375px;
-        font-size: 25px;
-        left: 29%;
-    }
-    .second_componet {
-        max-width: 100%;
-        height: 0px;
-        margin-top: 215px;
-        position: relative;
-        right: 20px;
-    }
-    .second_componet img {
-        display: none;
-    }
-}
 
 @media (max-width: 1024px) {
     #Softwer_titel {
@@ -179,21 +347,78 @@ body {
         font-size: 25px;
         top: -123px;
     }
-}
-@media (max-width:540px){
-    #Softwer_titel{
-        max-width: 300px;
-        font-size: 20px;
+
+    .title-number {
+        font-size: 115px;
     }
-} 
-@media (max-width:430px){
+
+    .title-01 {
+        left: 140px;
+    }
+
+    .pera1 {
+        font-size: 35px;
+        line-height: 44px;
+    }
+
+    .detials {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 990px) {
+    .custom-card.border-middle {
+        border-right: none;
+    }
+
+    .custom-card {
+        border-bottom: 2px solid transparent;
+        border-image-source: linear-gradient(270deg, rgba(232, 107, 49, 0) 0%, #E86B31 50%, rgba(232, 107, 49, 0) 100%);
+        border-image-slice: 1;
+    }
+}
+
+@media (max-width:540px) {
+    .title-number {
+        font-size: 97.01px;
+        font-weight: 700;
+        line-height: 111.55px;
+        text-align: left;
+        padding-top: 17px;
+    }
+
+    .pera1 {
+        font-family: Bricolage Grotesque;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: left;
+    }
+}
+
+@media (max-width:430px) {
+
+
+    #our_titel {
+        left: 43px;
+    }
+
     #Softwer_titel {
         max-width: 60%;
         font-size: 20px;
     }
+
+    .software-list {
+        font-size: 14px;
+    }
+
 }
+
 @media (max-width:375px) {
-    #Softwer_titel{
+
+    #Softwer_titel {
         max-width: 100%;
         font-size: 24px;
         position: relative;
@@ -201,301 +426,104 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    #our_titel {
+        font-family: Bricolage Grotesque;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: left;
 
- .explain-work {
-    width: 1063px;
-    height: 778.75px;
-    top: 1330px;
-    left: 201px;
-    gap: 81px;
-    opacity: 0px;
-    position: absolute;
+    }
+
+    .text-title-box {
+        display: none;
+    }
+
+    .text-title-box01 {
+        display: flex;
+        justify-content: center;
+    }
+    .detials {
+        font-family: Bricolage Grotesque;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #l_frame {
+        display: none;
+    }
+
+    #Softwer_titel {
+        max-width: 375px;
+        font-size: 25px;
+        left: 0%;
+        right: 0%;
+    }
+
+    .first_title_componet {
+        max-width: 100%;
+        height: 0px;
+        margin-top: 215px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .first_title_componet img {
+        display: none;
+    }
 }
 
-.anymation2 {
-    width: 159.14px;
-    height: 169.66px;
-    top: 590.39px;
-    border: 1px 0px 0px 0px;
-    position: relative;
-    transform: rotate(180deg);
-    text-align: right;
-    left: 1184px;
+@media (max-width: 767px) {
+
+    /* Mobile specific design */
+    .custom-card {
+        margin: 15px;
+        text-align: center;
+    }
+    .componet2 {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+      }
+
+      .title {
+        display: none;
+      }
+
+      .Software-title {
+        max-width: 490px;
+        font-size: 45px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+      }
+
+      .service-icon {
+        width: 13px;
+        height: 13px;
+      }
+
+      .Dev-points {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        height: 112px;
+      }
+   
 }
 
-.Box-1 {
-    position: relative;
-    top: 0px;
-    height: 102px;
-    border: 2px dashed #F0773A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 408.37px;
-    left: 327.32px;
-}
 
-.siniyer-carts {
-    position: absolute;
-    width: 1027px;
-    height: 595px;
-    top: 183px;
-    gap: 59px;
-}
 
-.junniyer-carts1 {
-    width: 1, 027px;
-    height: 268px;
-    gap: 58px;
-    display: flex;
-    justify-content: space-between;
-}
+/* responshive css code end hear */
 
-.cart1 {
-    display: inline-block;
-    width: 265px;
-    height: 256px;
-    gap: 19px;
-}
-
-.cart1 img {
-    width: 50px;
-    height: 50px;
-    gap: 10px;
-}
-
-.cart1-text {
-    width: 191px;
-    height: 72px;
-    gap: 10px;
-    font-family: Bricolage Grotesque;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 36px;
-    text-align: left;
-    position: relative;
-    color: white;
-}
-
-.cart1-text2 {
-    width: 265px;
-    height: 96px;
-    gap: 10px;
-    position: relative;
-    top: 28px;
-    font-family: Bricolage Grotesque;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: white;
-}
-
-.line0{
-    position: absolute;
-    width: 268px;
-    height: 0px;
-    top: 130px;
-    border: 4px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(270deg, rgba(232, 107, 49, 0) 0%, rgba(134, 53, 15, 0.6) 50.38%, rgba(232, 107, 49, 0) 100%);
-    transform: rotate(90deg);
-    left: 181px;
-    display: flex;
-}
-
-.cart2 {
-    position: relative;
-    display: inline-block;
-    width: 265px;
-    height: 256px;
-    gap: 19px;
-    right: 13px;
-}
-
-.cart1 img {
-    width: 50px;
-    height: 50px;
-    gap: 10px;
-}
-
-.cart2-text {
-    width: 191px;
-    height: 72px;
-    gap: 10px;
-    font-family: Bricolage Grotesque;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 36px;
-    text-align: left;
-    position: relative;
-    color: white;
-}
-
-.cart2-text2 {
-    width: 265px;
-    height: 96px;
-    gap: 10px;
-    position: relative;
-    top: 28px;
-    font-family: Bricolage Grotesque;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: white;
-}
-
-.line1 {
-    position: absolute;
-    width: 268px;
-    height: 0px;
-    top: 130px;
-    border: 4px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(270deg, rgba(232, 107, 49, 0) 0%, rgba(134, 53, 15, 0.6) 50.38%, rgba(232, 107, 49, 0) 100%);
-    transform: rotate(90deg);
-    right: 208px;
-}
-
-.cart3 {
-    display: inline-block;
-    position: relative;
-    width: 265px;
-    height: 256px;
-    gap: 19px;
-    right: 22px;
-}
-
-.cart3 img {
-    width: 50px;
-    height: 50px;
-    gap: 10px;
-}
-
-.cart3-text {
-    width: 191px;
-    height: 72px;
-    gap: 10px;
-    font-family: Bricolage Grotesque;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 36px;
-    text-align: left;
-    position: relative;
-}
-
-.cart3-text2 {
-    width: 265px;
-    height: 96px;
-    gap: 10px;
-    position: relative;
-    top: 28px;
-    font-family: Bricolage Grotesque;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-align: left;
-}
-
-.junniyer-carts2 {
-    width: 632px;
-    height: 268px;
-    gap: 51px;
-    position: relative;
-    top: 59px;
-    left: 197px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.cart4 {
-    display: inline-block;
-    position: relative;
-    width: 265px;
-    height: 256px;
-    gap: 19px;
-}
-
-.cart4 img {
-    width: 50px;
-    height: 50px;
-    gap: 10px;
-}
-
-.cart4-text {
-    width: 191px;
-    height: 72px;
-    gap: 10px;
-    font-family: Bricolage Grotesque;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 36px;
-    text-align: left;
-    position: relative;
-    color: white;
-}
-
-.cart4-text2 {
-    width: 265px;
-    height: 96px;
-    gap: 10px;
-    position: relative;
-    top: 28px;
-    font-family: Bricolage Grotesque;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: white;
-}
-
-.cart5 {
-    display: inline-block;
-    position: relative;
-    width: 265px;
-    height: 256px;
-    gap: 19px;
-}
-
-.cart5 img {
-    width: 50px;
-    height: 50px;
-    gap: 10px;
-}
-
-.cart5-text {
-    width: 191px;
-    height: 72px;
-    gap: 10px;
-    font-family: Bricolage Grotesque;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 36px;
-    text-align: left;
-    position: relative;
-    color: white;
-}
-
-.cart5-text2 {
-    width: 265px;
-    height: 96px;
-    gap: 10px;
-    position: relative;
-    top: 28px;
-    font-family: Bricolage Grotesque;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: white;
-}
-
+/*
 .box-2 {
     width: 1341px;
     height: 1742.37px;
@@ -519,7 +547,7 @@ body {
     position: relative;
 }
 
-.text-title-box h1 {
+.text-title-box .title-number {
     width: 179px;
     height: 120px;
     font-family: Arial;
@@ -605,7 +633,7 @@ body {
     position: relative;
 }
 
-.text-title-box2 h1 {
+.text-title-box2 .title-number {
     width: 179px;
     height: 120px;
     font-family: Arial;
@@ -663,7 +691,7 @@ body {
     left: 100px;
 }
 
-.text-title-box3 h1 {
+.text-title-box3 .title-number {
     width: 179px;
     height: 148px;
     font-family: Arial;
@@ -1205,7 +1233,7 @@ body {
     display: inline-block block;
 }
 
-.Footer-Service h1 {
+.Footer-Service .title-number {
     color: white;
     font-family: Bricolage Grotesque;
     font-size: 28px;
@@ -1238,7 +1266,7 @@ body {
     display: inline-block block;
 }
 
-.Footer-Join-Us h1 {
+.Footer-Join-Us .title-number {
     color: white;
     font-family: Bricolage Grotesque;
     font-size: 28px;
@@ -1270,7 +1298,7 @@ body {
     display: inline-block block;
 }
 
-.Footer-Contact-Us h1 {
+.Footer-Contact-Us .title-number {
     color: white;
     font-family: Bricolage Grotesque;
     font-size: 28px;
