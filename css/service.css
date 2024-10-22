@@ -112,31 +112,32 @@ body {
 
 /* navbar css code end hear */
 
-.second_componet {
+.first_title_componet {
     max-width: 100%;
     height: 165px;
     margin-top: 124px;
-    position: relative;
-    right: 20px;
 }
 
-#Services_titel {
+#Softwer_titel {
     border: 3px dashed rgba(232, 107, 49, 1);
+    font-family: Bricolage Grotesque;
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: center;
     background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    padding: 0px;
     max-width: 20%;
     position: relative;
-    padding-top: 24px;
-    font-family: Bricolage Grotesque;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 52px;
-    text-align: center;
-    margin-top: 300px;
+    left: 40%;
+    right: 35%;
     top: -148px;
-    left: 42%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 /* software devlopment  componet css start */
 #brand {
@@ -323,6 +324,10 @@ body {
     text-align: left;
     padding-top: 30px;
 }
+.row{
+    display: flex;
+    justify-content: center;
+}
 
 .col1 {
     padding-left: 90px;
@@ -439,106 +444,21 @@ body {
 }
 /* Graphic Design componet end hear */
 
-footer {
-    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
-    color: white;
-    padding: 20px 0;
-    margin-top: 100px;
-    margin-left: -20px;
-    margin-right: -20px;
-}
 
-.container {
-    max-width: 1200px;
-    margin-left: 40px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-logo {
-    flex: 1 1 300px;
-    padding: 10px;
-}
-
-.footer-logo p {
-    font-family: Bricolage Grotesque;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    margin-top: 40px;
-}
-
-.footer-links {
-    display: flex;
-    flex: 2 1 600px;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.footer-links div {
-    flex: 1;
-    padding-left: 98px;
-}
-
-.footer-links h3 {
-    font-family: Bricolage Grotesque;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 36px;
-    text-align: left;
-
-}
-
-.footer-links ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-links ul li {
-    margin-bottom: 8px;
-}
-
-.footer-links ul li a {
-    font-family: Bricolage Grotesque;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    text-decoration: none;
-    color: white;
-}
-
-.footer-bottom {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.footer-bottom p {
-    color: white;
-    font-family: Bricolage Grotesque;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 36px;
-    text-align: left;
-
-}
 /* responshive css code start  */
 @media (max-width:375px) {
-    #Services_titel{
-        max-width: 50%;
+    #Softwer_titel {
+        max-width: 100%;
         font-size: 24px;
+        position: relative;
+        left: 133px;
     }
 }
 @media (max-width:430px) {
 
-    #Services_titel{
-        max-width: 40%;
-        font-size: 28px;
+    #Softwer_titel {
+        max-width: 60%;
+        font-size: 20px;
     }
     body {
         margin: 0px;
@@ -565,8 +485,6 @@ footer {
         background: none;
         left: 1px;
         right: -9px;
-        /* margin-left: 40px;
-    margin-right: 0px; */
     }
 
     .container-fluid {
@@ -639,8 +557,6 @@ footer {
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-
-        /* Active color */
     }
 
     /* brand componet css */
@@ -697,7 +613,7 @@ footer {
     .componet {
         display: flex;
         justify-items: center;
-        max-width: 378px
+        max-width: 100%;
     }
 
     .componet2 {
@@ -738,7 +654,11 @@ footer {
     #Services_titel{
         max-width: 30%;
     }
-    body {
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    /* body {
         margin: 0px;
         margin-top: 21px;
     }
@@ -763,8 +683,7 @@ footer {
         background: none;
         left: 1px;
         right: -9px;
-        /* margin-left: 40px;
-    margin-right: 0px; */
+       
     }
 
     .container-fluid {
@@ -838,10 +757,10 @@ footer {
         background-clip: text;
         color: transparent;
 
-        /* Active color */
+      
     }
 
-    /* brand componet css */
+   
     .title {
         position: relative;
         font-size: 28px;
@@ -895,7 +814,7 @@ footer {
     .componet {
         display: flex;
         justify-items: center;
-        max-width: 378px
+        max-width: 100%;
     }
 
     .componet2 {
@@ -932,7 +851,7 @@ footer {
     .Dev-point2 {
         left: 10px;
         position: relative;
-    }
+    } */
 }
 
 @media (max-width:540px) {
@@ -984,27 +903,33 @@ footer {
 
 }
 
-@media (max-width: 768px) {
-    #Services_titel{
-        max-width: 30%;
-    }
+@media (max-width: 767px) {
+    
    
     #Softwer_titel {
         max-width: 375px;
         font-size: 25px;
         left: 29%;
         padding-bottom: 20px;
+        min-width: min-content;
+        font-size: 25px;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        padding: 20px;
     }
 
-    .second_componet {
+    .first_title_componet {
         max-width: 100%;
         height: 0px;
         margin-top: 215px;
         display: flex;
         justify-content: center;
+        align-content: center;
+        align-items: center;
     }
 
-    .second_componet img {
+    .first_title_componet img {
         display: none;
     }
     .card {
@@ -1013,11 +938,11 @@ footer {
 
     .col1 {
         padding-left: 8%;
-        padding-right: 4%;
+        padding-right: 8%;
     }
 
     .col2 {
-        padding-left: 4%;
+        padding-left: 8%;
         padding-right: 8%;
     }
 
@@ -1135,6 +1060,13 @@ footer {
         justify-content: center;
     }
     
+}
+@media (max-width:1024) {
+    #Softwer_titel {
+        max-width: 374px;
+        font-size: 25px;
+        top: -123px;
+    }
 }
 @media(max-width:1040px) {
     .nav-link {

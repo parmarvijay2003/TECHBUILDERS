@@ -41,11 +41,6 @@ function myFunction(x) {
 //     });
 // }
 // addEventListener('load', main);
-
-
-
-
-
 // document.getElementById('h1').addEventListener('click', function(event) {
 //     event.preventDefault(); // Prevent default link behavior
 //     var label = document.getElementById('navbarDropdown');
