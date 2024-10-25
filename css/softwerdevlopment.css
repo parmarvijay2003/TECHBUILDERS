@@ -434,7 +434,10 @@ body {
 .portfolio-btn2 {
     display: none;
 }
-
+.row{
+    padding-left: 100px;
+    padding-right: 100px;
+}
 .card1-title {
     color: #007DFC;
     font-family: Bricolage Grotesque;
@@ -608,6 +611,10 @@ body {
         font-weight: 300;
         line-height: 22px;
     }
+    .row{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 @media (max-width: 990px) {
@@ -755,7 +762,6 @@ body {
     #Softwer_titel {
         min-width: min-content;
         font-size: 25px;
-        /* top: 0%; */
         left: 0%;
         right: 0%;
         padding: 20px;
