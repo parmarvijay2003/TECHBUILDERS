@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Navigation with Data Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            background-color: #333;
+            overflow: hidden;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 14px 16px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .tab:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a class="tab" onclick="redirectToPage('page1.html')">Tab 1</a>
+        <a class="tab" onclick="redirectToPage('page2.html')">Tab 2</a>
+        <a class="tab" onclick="redirectToPage('page3.html')">Tab 3</a>
+        <a class="tab" onclick="redirectToPage('page4.html')">Tab 4</a>
+    </div>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

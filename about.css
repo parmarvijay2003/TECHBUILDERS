@@ -1,0 +1,262 @@
+.about_titel{ 
+    color: white;
+    text-align: center;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Component Styles */
+.content-component {
+    display: flex;
+     justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color:black;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 900px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Section */
+.text-section {
+    flex: 2;
+    margin-right: 20px; /* Creates space between the text and the image */
+}
+
+.component-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.component-paragraph {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.component-topic { 
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.component-bullets {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+    
+}
+
+.component-bullets li {
+    margin-bottom: 8px;
+}
+
+/* Image Section */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} 
+/* right */
+.content-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 900px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Adds space between the image and text */
+}
+
+.component-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} #right-frame{
+    margin-top: 190px; 
+    position: relative;
+     max-width: fit-content; 
+     float: right;
+}
+
+/* Text Section */
+.text-section {
+    flex: 2;
+}
+
+.component-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.component-paragraph {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.component-topic {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.component-bullets {
+    list-style-type: disc;
+    margin-left: 20px;}
+
+.component-bullets li {
+    margin-bottom: 8px;
+}
+.componet_li{
+     display:  flex;
+      flex-direction:row;
+}
+.component-bullets{
+    list-style: none; /* Remove default bullets */
+    padding-left: 20px; /* Add padding for custom bullets */
+  }
+  
+  .component-bullets li {
+    position: relative;
+    padding-left: 20px; /* Space for the gradient bullet */
+  }
+  
+  .component-bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    border-radius: 50%; /* Make it circular, like a bullet point */
+  } 
+  /* main */
+  .why-choose-us h1 {
+    border : 2px dashed #FF7F50; /* Orange header text */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-image: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+     color: transparent;
+     max-width: max-content;
+     margin: auto;
+    padding:  20px 20px;
+}
+
+.why-choose-us p.lead {
+    font-size: 1.2rem;
+    color: #ccc; /* Lighter text for description */
+}
+
+/* Features List */
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items in a row */
+    grid-gap: 20px; /* Spacing between items */
+    justify-content: center;
+}
+
+.feature-item {
+    position: relative;
+    padding-left: 25px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Custom Gradient Dots */
+.feature-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+}
+
+/* Illustration Section */
+.illustration img {
+    width: 100%;
+    max-width: 400px; /* Adjust the size of the image */
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content-component {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-section {
+        margin-right: 0;
+    }
+
+    .image-section {
+        margin-top: 20px;
+    }
+    .content-component {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    #right-frame{
+        display: none;
+    } 
+    /* main */
+    .features-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+}
