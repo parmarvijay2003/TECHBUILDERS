@@ -17,15 +17,10 @@
             font-weight: 900;
             font-style: normal;
             position: relative;
-            /* margin-left: 20px;
-            margin-right: 20px;
-            margin-top: 20px; */
         }
 
         /* navbar componet  start*/
         .navbar {
-            /* padding: 0px;
-            margin: 0px; */
             border: 2px solid transparent;
             border-radius: 10px;
             position: relative;
@@ -39,7 +34,6 @@
             content: "";
             position: absolute;
             inset: -8px;
-            /* background: linear-gradient( 90deg, #d61039 40%, #5E1F72 100%); */
             background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
             filter: blur(px);
             transform: translate3d(6px, 12px, -1px);
