@@ -243,15 +243,16 @@ body {
     background-clip: text;
     color: transparent;
     padding: 0px;
-    max-width: 30%;
+    max-width: 20%;
     position: relative;
-    left: 35%;
+    left: 41%;
     right: 35%;
     top: -148px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
+    z-index: -1;
 }
 
 .line {

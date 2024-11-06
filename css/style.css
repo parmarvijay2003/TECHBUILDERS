@@ -17,6 +17,7 @@
             font-weight: 900;
             font-style: normal;
             position: relative;
+            overflow-x: hidden;
         }
 
         /* navbar componet  start*/
@@ -128,8 +129,8 @@
             /* right: 20px; */
         }
 
-        /* 
-        #navbarDropdown.changedColor {
+        
+        /* #navbarDropdown.changedColor {
             background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
             -webkit-background-clip: text;
             background-clip: text;
@@ -174,7 +175,7 @@
             max-width: 501px
         }
 
-        .bt {
+        /* .bt {
             background: linear-gradient(black, black) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
             border: 2px solid transparent;
             color: white;
@@ -184,8 +185,28 @@
             padding: 0px;
             text-align: center;
             min-height: 76px;
+        } */
+        .button-main {
+            display: flex;
         }
-
+        .portfolio-btn {
+            background: linear-gradient(black, black) padding-box,
+                linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+            border: 2px solid transparent;
+            color: white;
+            border-radius: 50px;
+            display: flex;
+            padding: 25px 20px;
+            gap: 20px;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: left;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
         .brand_titel {
             border: 3px dashed rgba(232, 107, 49, 1);
             font-family: Bricolage Grotesque;
@@ -318,58 +339,173 @@
         .right-frame {
             float: right;
             position: relative;
-            top: 190px;
         }
 
-        #Our_work {
+        .first_title_componet {
+            max-width: 100%;
+            height: 165px;
+            margin-top: 50px;
+        }
+        
+        #Softwer_titel {
+            border: 3px dashed rgba(232, 107, 49, 1);
             font-family: Bricolage Grotesque;
-            font-size: 45px;
+            font-size: 2vw;
             font-weight: 700;
             text-align: center;
-            border: 3px dashed rgba(232, 107, 49, 1);
             background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             padding: 0px;
-            max-width: 20%;
+            max-width: 30%;
             position: relative;
             left: 35%;
             right: 35%;
-            top: -119px;
             padding-top: 20px;
             padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            z-index: -1;
         }
 
-        .our-work {
+        .portfolio-title-main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             text-align: center;
-            padding: 50px 20px;
+            padding-top: 98px;
+        
+        }
+        
+        .portfolio-title-text {
+            color: white;
+            font-family: Bricolage Grotesque;
+            font-size: 45px;
+            font-weight: 700;
+            line-height: 52px;
+            align-items: center;
+        }
+        .portfolio {
+            background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+        
+        .portfolio-btn {
+            background: linear-gradient(black, black) padding-box,
+                linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+            border: 2px solid transparent;
+            color: white;
+            border-radius: 50px;
+            display: flex;
+            padding: 25px 20px;
+            gap: 20px;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: left;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .portfolio-btn2 {
+            display: none;
+        }
+        /* .row{
+            padding-left: 100px;
+            padding-right: 100px;
+        } */
+        .card1-title {
+            color: #007DFC;
+            font-family: Bricolage Grotesque;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 40px;
+            text-align: left;
+            padding-bottom: 30px;
+        }
+        
+        .card2-title {
+            color: #7288FA;
+            font-family: Bricolage Grotesque;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 40px;
+            text-align: left;
+            padding-bottom: 30px;
+        }
+        
+        .project-cards {
+            padding-top: 130px;
             background-color: black;
-            position: relative;
-            top: 461px;
+            color: white;
         }
-
-        #Rajvee-Digital {
-            color: rgba(114, 136, 250, 1);
+        
+        .card-body {
+            padding: 0;
+        }
+        
+        .card-text {
+            font-family: Bricolage Grotesque;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.5px;
             text-align: left;
+            padding-top: 30px;
         }
-
-        #shoe-spot {
-            color: rgba(0, 125, 252, 1);
+        
+        .portfolio-bt1 {
+            display: flex;
+            width: 245px;
+            height: 70px;
+            gap: 20px;
+            margin-top: 30px;
+            border-radius: 50px;
+            background-color: #007DFC;
+            color: white;
+            font-family: Bricolage Grotesque;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 28px;
             text-align: left;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
         }
-
-        #Ashpveda {
-            color: rgba(0, 148, 135, 1);
-            ;
+        
+        .portfolio-bt2 {
+            display: flex;
+            width: 245px;
+            height: 70px;
+            gap: 20px;
+            margin-top: 30px;
+            border-radius: 50px;
+            color: white;
+            font-family: Bricolage Grotesque;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 28px;
             text-align: left;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: #7288FA;
         }
-
-        #Befit {
-            color: rgba(106, 240, 1, 1);
-            text-align: left;
+        
+        #arrow {
+            min-width: 28px;
+            height: 20px;
+            color: white;
         }
-
+        
         #work-card-text {
             font-size: 14px;
             text-align: left;
@@ -455,12 +591,13 @@
         }
 
         #our {
+            display: flex;
             font-size: 45px;
             color: white;
-            max-width: 40%;
+            max-width: 100%;
             left: 40px;
             text-align: left;
-            top: -80px;
+            top: -100px;
             position: relative;
         }
 
