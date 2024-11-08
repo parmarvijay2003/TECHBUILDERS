@@ -1782,7 +1782,6 @@
                 padding: 20px;
                 margin: auto;
                 position: relative;
-                top: -463px;
             }
 
             .Achievements {
@@ -1801,22 +1800,11 @@
                 overflow-x: hidden;
                 scroll-behavior: smooth;
                 min-width: 100%;
-                margin-top: -68%;
             }
-
-            /* conntact us     */
-            /* .bt {
-    position: relative;
-    font-size: 20px;
-    font-weight: 700;
-    min-width: 190px;
-    top: 30px;
-} */
             .container2 {
                 flex-direction: column;
                 text-align: center;
                 order: 3;
-                margin-top: 68%;
             }
 
             .content-contact {
@@ -1835,8 +1823,6 @@
                 text-align: center;
                 margin: auto;
             }
-
-            .illustration {}
 
             .booking-form {
                 order: 3;
