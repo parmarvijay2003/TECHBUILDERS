@@ -161,4 +161,121 @@ bu2.forEach(function(button) {
     });
   });
 
+
+
+  
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.profiles-carousel');
+    const cards = document.querySelectorAll('.profile-card');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicators = document.querySelectorAll('input[name="carousel"]');
+    
+    let currentIndex = 1; // Start with second card (center position)
+    let autoScrollInterval;
+
+    // Function to update carousel
+    function updateCarousel(index) {
+        // Remove active class from all cards
+        cards.forEach(card => card.classList.remove('active'));
+        
+        // Add active class to center card
+        cards[index].classList.add('active');
+
+        // Calculate scroll position to center the active card
+        const cardWidth = cards[0].offsetWidth;
+        const scrollPosition = (index - 1) * cardWidth;
+        
+        // Smooth scroll to position
+        carousel.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+        });
+
+        // Update indicators
+        const indicatorIndex = index - 1;
+        indicators.forEach((indicator, i) => {
+            indicator.checked = (i === indicatorIndex);
+        });
+
+        currentIndex = index;
+    }
+
+    // Next button click handler
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < cards.length - 1) {
+            updateCarousel(currentIndex + 1);
+        } else {
+            updateCarousel(1); // Loop back to start
+        }
+    });
+
+    // Previous button click handler
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 1) {
+            updateCarousel(currentIndex - 1);
+        } else {
+            updateCarousel(cards.length - 1); // Loop to end
+        }
+    });
+
+    // Indicator click handler
+    window.scrollToProfile = function(index) {
+        updateCarousel(index + 1); // Add 1 to account for center positioning
+    };
+
+    // Auto scroll functionality
+    function startAutoScroll() {
+        autoScrollInterval = setInterval(() => {
+            if (currentIndex < cards.length - 1) {
+                updateCarousel(currentIndex + 1);
+            } else {
+                updateCarousel(1);
+            }
+        }, 2000);
+    }
+
+    function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+    }
+
+    // Touch support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+        stopAutoScroll();
+    });
+
+    carousel.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].clientX;
+        handleSwipe();
+        startAutoScroll();
+    });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const difference = touchStartX - touchEndX;
+
+        if (Math.abs(difference) > swipeThreshold) {
+            if (difference > 0) {
+                nextBtn.click();
+            } else {
+                prevBtn.click();
+            }
+        }
+    }
+
+    // Start auto scroll
+    startAutoScroll();
+
+    // Pause on hover
+    carousel.addEventListener('mouseenter', stopAutoScroll);
+    carousel.addEventListener('mouseleave', startAutoScroll);
+
+    // Initial setup
+    updateCarousel(1); // Start with center card active
+});
   

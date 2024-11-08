@@ -129,7 +129,7 @@
             /* right: 20px; */
         }
 
-        
+
         /* #navbarDropdown.changedColor {
             background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
             -webkit-background-clip: text;
@@ -189,6 +189,7 @@
         .button-main {
             display: flex;
         }
+
         .portfolio-btn {
             background: linear-gradient(black, black) padding-box,
                 linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
@@ -207,6 +208,7 @@
             cursor: pointer;
             text-decoration: none;
         }
+
         .brand_titel {
             border: 3px dashed rgba(232, 107, 49, 1);
             font-family: Bricolage Grotesque;
@@ -346,7 +348,7 @@
             height: 165px;
             margin-top: 50px;
         }
-        
+
         #Softwer_titel {
             border: 3px dashed rgba(232, 107, 49, 1);
             font-family: Bricolage Grotesque;
@@ -375,9 +377,9 @@
             align-items: center;
             text-align: center;
             padding-top: 98px;
-        
+
         }
-        
+
         .portfolio-title-text {
             color: white;
             font-family: Bricolage Grotesque;
@@ -386,12 +388,13 @@
             line-height: 52px;
             align-items: center;
         }
+
         .portfolio {
             background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
             color: transparent;
             -webkit-background-clip: text;
         }
-        
+
         .portfolio-btn {
             background: linear-gradient(black, black) padding-box,
                 linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
@@ -410,10 +413,11 @@
             cursor: pointer;
             text-decoration: none;
         }
-        
+
         .portfolio-btn2 {
             display: none;
         }
+
         /* .row{
             padding-left: 100px;
             padding-right: 100px;
@@ -427,7 +431,7 @@
             text-align: left;
             padding-bottom: 30px;
         }
-        
+
         .card2-title {
             color: #7288FA;
             font-family: Bricolage Grotesque;
@@ -437,17 +441,17 @@
             text-align: left;
             padding-bottom: 30px;
         }
-        
+
         .project-cards {
             padding-top: 130px;
             background-color: black;
             color: white;
         }
-        
+
         .card-body {
             padding: 0;
         }
-        
+
         .card-text {
             font-family: Bricolage Grotesque;
             font-size: 16px;
@@ -457,7 +461,7 @@
             text-align: left;
             padding-top: 30px;
         }
-        
+
         .portfolio-bt1 {
             display: flex;
             width: 245px;
@@ -478,7 +482,7 @@
             cursor: pointer;
             text-decoration: none;
         }
-        
+
         .portfolio-bt2 {
             display: flex;
             width: 245px;
@@ -499,13 +503,13 @@
             text-decoration: none;
             background-color: #7288FA;
         }
-        
+
         #arrow {
             min-width: 28px;
             height: 20px;
             color: white;
         }
-        
+
         #work-card-text {
             font-size: 14px;
             text-align: left;
@@ -516,7 +520,6 @@
         .work-container {
             display: grid;
             grid-template-columns: 1fr;
-            /* Default to 1 card per row on small screens */
             gap: 30px;
             padding: 0 20px;
             position: relative;
@@ -612,7 +615,7 @@
             padding: 20px;
             margin: auto;
             position: relative;
-            top: -289px;
+            top: 211px;
         }
 
         .profile-card {
@@ -636,8 +639,6 @@
     width: 0; /* Set width to 0 since we're only using a border */
         /* */
 
-
-        /**/
         .card-wrapper {
             display: flex;
             justify-content: space-between;
@@ -796,11 +797,6 @@
             /* Smooth scrolling behavior */
         }
 
-        /* .card {
-            min-width: 250px;
-            margin-left: 50px;
-            flex: none;
-        } */
 
         .scrolling-wrapper::-webkit-scrollbar {
             display: none;
@@ -815,30 +811,64 @@
 
         /*profile-card */
         .profile-section {
-            margin-top: 920px;
+            margin-top: 400px;
+        }
+
+        .profile-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            position: relative;
         }
 
         .profiles-carousel {
             display: flex;
             overflow-x: hidden;
-            /* Hide the overflow */
+            scroll-snap-type: x mandatory;
             scroll-behavior: smooth;
-            /* Smooth scrolling */
-            width: 100%;
-            margin-top: -32%;
-            /* Ensure carousel takes full width */
+            padding: 20px 0;
+            position: relative;
+            gap: 20px;
         }
 
         .profile-card {
-            flex: 0 0 calc(100% / 3);
-            /* Default: Each card takes 1/3rd of the width */
+            flex: 0 0 30.333%;
+            min-width: 31.333%;
+            text-align: center;
+            transition: all 0.5s ease;
+            opacity: 1;
             margin: 10px;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 30px;
+            border-radius: 20px;
+            transform: scale(0.85);
+            scroll-snap-align: center;
+            position: relative;
             background-color: #f8f9fa;
             box-sizing: border-box;
 
             /* Ensure padding doesn't affect width */
+        }
+
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 20px;
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            z-index: -1;
+        }
+
+        .profile-card.active {
+            opacity: 1;
+            transform: scale(1);
+            z-index: 2;
         }
 
         .profile-image {
@@ -899,10 +929,9 @@
 
         #prevBtn {
             position: absolute;
-            left: 10px;
+            left: 250px;
             color: #ED7136;
-
-            /* Adjust for mobile */
+            font-weight: 900;
         }
 
         #prevBtn:hover {
@@ -915,9 +944,9 @@
 
         #nextBtn {
             position: absolute;
-            right: 10px;
+            right: 250px;
             color: #ED7136;
-            /* Adjust for mobile */
+            font-weight: 900;
         }
 
         .carousel-controls {
@@ -947,7 +976,7 @@
             gap: 0px;
             position: relative;
             left: 7%;
-            top: 500px;
+            top: 300px;
         }
 
         /* 
@@ -1034,7 +1063,7 @@
             padding: 20px;
             gap: 0px;
             position: relative;
-            margin-top: 500px;
+            margin-top: 300px;
         }
 
         .about_btn {
@@ -1062,7 +1091,7 @@
             padding: 20px;
             margin: auto;
             position: relative;
-            top: 630px;
+            top: 350px;
         }
 
         /* footer code */
@@ -1165,14 +1194,6 @@
             .nav-link {
                 font-size: 20px;
             }
-        }
-
-        @media (min-width: 768px) {
-            .work-container {
-                grid-template-columns: repeat(2, 1fr);
-                /* 2 cards per row on medium screens and above */
-            }
-
         }
 
         /* media qrey  tablet view*/
@@ -1366,6 +1387,9 @@
 
             .profile-card {
                 margin-top: 20%;
+                flex: 0 0 100%;
+                min-width: 100%;
+                padding: 20px;
             }
 
             .container2 {
@@ -1382,13 +1406,9 @@
 
             #contact_id {
                 order: 1;
-                position: relative;
-                top: -748px;
                 text-align: ce;
                 font-size: 28px;
             }
-
-            .illustration {}
 
             .booking-form {
                 order: 3;
@@ -1424,6 +1444,10 @@
                 font-size: 28px;
             }
 
+            .profile-card {
+                opacity: 1;
+            }
+
             /* about us */
             .about-container {
                 flex-direction: column;
@@ -1436,6 +1460,11 @@
                 font-weight: 700;
                 min-width: fit-content;
                 top: 30px;
+            }
+
+            .work-container {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 cards per row on medium screens and above */
             }
 
             /* footer code */
