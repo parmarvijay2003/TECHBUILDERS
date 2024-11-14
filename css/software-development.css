@@ -243,11 +243,11 @@ body {
     background-clip: text;
     color: transparent;
     padding: 0px;
-    max-width: 20%;
+    max-width: 26%;
     position: relative;
-    left: 41%;
-    right: 35%;
-    top: -148px;
+    left: 37%;
+    right: 33%;
+    top: -122px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -430,6 +430,9 @@ body {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+}
+.portfolio-btn:hover {
+    color: #ffffff;
 }
 
 .portfolio-btn2 {

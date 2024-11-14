@@ -1,201 +1,211 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar scroll</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; justify-content: flex-end;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Link
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
-      
-
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar with Dropdown</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Dropdown</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/software-development.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="project.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">
-          <img src="assets/logo/svg/" class="img-thumbnail" alt="...">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Services</a>
-                <div class="dropdown-content">
-                    <a href="#">Web Design</a>
-                    <a href="#">App Development</a>
-                    <a href="#">SEO</a>
-                </div>
-            </li>
-            <li>
-                <a href="#">project</a></li>
-                <li>
-                <a href="#">about us</a></li>
-             <li>
-                <a href="#">Contact us</a></li>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/logo/svg/header-logo.svg" alt="techbuliders" srcset="" id="logo">
+      </a>
+      <button class="navbar-toggler ml-0 mr-0." type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars" style="color:white;"></i>
+
+      </button>
+      <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+        <ul class="navbar-nav col-lg ms-auto mb-0 mb-lg-0 w-100 d-flex justify-content-end text-end float-end" id="n">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+              <i class="fa-solid fa-angle-down" id="icone"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/services/game-development.html" id="h1">Game
+                  Development</a></li>
+              <li><a class="dropdown-item" href="/services/software-development.html" id="h2">Software
+                  Development</a></li>
+              <li><a class="dropdown-item" href="/services/branding.html" id="h3">Branding</a></li>
+              <li><a class="dropdown-item" href="/services/graphic-design.html" id="h4">Graphic Design</a></li>
+              <li><a class="dropdown-item" href="/services/product-engineering.html" id="h5">Product
+                  Engineering</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about_us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
         </ul>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <span class="icon"></span>
-            <span class="icon"></span>
-            <span class="icon"></span>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
+  </h1>
+  <img src="assets/icons/svg/left-frame.svg" alt="" id="left-frame">
+  <div class="componet">
+    <h1 class="display-6">About us</h1>
+  </div>
+  <h1 class="about_titel">Innovate. Transform. Excel:<strong class="text_color"> Your IT Partner for Success.</strong>
+  </h1>
 
- </h1>
- <img src="assets/icons/svg/left-frame.svg" alt="" id="left-frame">
-   <div class="componet">
-<h1 class="display-6">About us</h1>
-   </div>
-   <h1 class="about_titel">Innovate. Transform. Excel:<strong class="text_color"> Your IT Partner for Success.</strong></h1>
-
-   <div class="content-component">
+  <div class="content-component">
+    <div class="image-section">
+      <img src="assets/images/svg/our-apporoach.svg" alt="Descriptive Image" class="component-image">
+    </div>
     <div class="text-section">
-        <h1 class="component-title text_color">Our Approach</h2>
-        <p class="component-paragraph">Our approach revolves around embracing innovation, cultivating strong relationships, and delivering solutions that propel our clients toward a successful digital transformation journey. we blend passion, expertise, and innovation to revolutionize the way businesses operate. Our approach is founded on collaboration, customization, and a commitment to excellence, ensuring that our clients experience a seamless digital transformation and achieve lasting success.</p>
-         <div class="componet_li">
-        <ul class="component-bullets">
+      <div class="portfolio-title-text">
+        <span class="portfolio">Our Approach</span>
+      </div>
+      <div class="paragraph-component">
+        <p class="component-paragraph">Our approach revolves around embracing innovation, cultivating strong
+          relationships, and delivering solutions that propel our clients toward a successful digital transformation
+          journey. we blend passion, expertise, and innovation to revolutionize the way businesses operate. Our approach
+          is founded on collaboration, customization, and a commitment to excellence, ensuring that our clients
+          experience a seamless digital transformation and achieve lasting success.</p>
+        <div class="componet_li">
+          <ul class="component-bullets">
             <li>Collaborative Partnerships</li>
             <li>Customized Solutions</li>
             <li>Security and Compliance</li>
-        </ul>
-        <ul class="component-bullets">
-          <li>Continuous Learning and Growth</li>
-          <li>Empowering Our Team</li>
-          <li>Agility and Adaptability</li>
-      </ul>
-        </div>
-    </div>
-    <div class="image-section">
-        <img src="assets/images/svg/our-apporoach.svg" alt="Descriptive Image" class="component-image">
-    </div>
-</div>
-
-<!-- right -->
-<div class="content-component">
-    <div class="image-section">
-        <img src="assets/images/svg/oue-vision.svg" alt="Descriptive Image" class="component-image">
-    </div>
-    <div class="text-section">
-        <h2 class="component-title">our vission</h2>
-        <p class="component-paragraph">Our vision is to be the trailblazers of technological innovation, driving positive change and shaping a future where technology is harnessed to its fullest potential. We aspire to be at the forefront of the digital landscape, empowering businesses and individuals alike with cutting-edge solutions that transform the way they operate, interact, and thrive in a rapidly evolving world.</p>
-        <ul class="component-bullets">
-            <li>Unleashing Boundless Possibilities</li>
-            <li>Embracing Collaboration and Partnership</li>
-            <li>Driving Social and Environmental Responsibility</li>
-        </ul>
-    </div>
-</div>
- <!-- left -->
-  
- <div class="content-component">
-    <div class="text-section">
-        <h1 class="component-title text_color">Our Mission</h2>
-        <p class="component-paragraph">Our mission is to be a catalyst for positive transformation in the business world. We are driven by a relentless passion for technology and its power to reshape industries, enhance processes, and drive growth. Our focus is on delivering innovative IT solutions that empower businesses to thrive in the digital age, achieve their goals, and stay ahead of the competition.</p>
-        <ul class="component-bullets">
+          </ul>
+          <ul class="component-bullets ps-3">
             <li>Continuous Learning and Growth</li>
             <li>Empowering Our Team</li>
             <li>Agility and Adaptability</li>
-        </ul>
-    </div>
-    <div class="image-section">
-        <img src="assets/images/svg/our-apporoach.svg" alt="Descriptive Image" class="component-image">
-    </div>
-</div>
-<img src="assets/icons/svg/right-frame.svg" alt="" id="right-frame">
+          </ul>
+        </div>
+      </div>
 
-     <!-- Main Section -->
-<section class="why-choose-us text-center py-5">
-  <div class="container">
+    </div>
+
+  </div>
+
+  <!-- right -->
+  <div class="content-component">
+    <div class="image-section">
+      <img src="assets/images/svg/oue-vision.svg" alt="Descriptive Image" class="component-image">
+    </div>
+    <div class="text-section">
+      <div class="portfolio-title-text">
+        <span class="portfolio">Our Vision</span>
+      </div>
+      <p class="component-paragraph">Our vision is to be the trailblazers of technological innovation, driving positive
+        change and shaping a future where technology is harnessed to its fullest potential. We aspire to be at the
+        forefront of the digital landscape, empowering businesses and individuals alike with cutting-edge solutions that
+        transform the way they operate, interact, and thrive in a rapidly evolving world.</p>
+      <ul class="component-bullets">
+        <li>Unleashing Boundless Possibilities</li>
+        <li>Embracing Collaboration and Partnership</li>
+        <li>Driving Social and Environmental Responsibility</li>
+      </ul>
+    </div>
+  </div>
+  <!-- left -->
+  <div class="content-component">
+    <div class="image-section">
+      <img src="imagis/our_mission.svg" alt="Descriptive Image" class="component-image">
+    </div>
+    <div class="text-section">
+      <div class="portfolio-title-text">
+        <span class="portfolio">Our Mission</span>
+      </div>
+      <div class="paragraph-component">
+        <p class="component-paragraph">Our mission is to be a catalyst for positive transformation in the business
+          world. We are driven by a relentless passion for technology and its power to reshape industries, enhance
+          processes, and drive growth. Our focus is on delivering innovative IT solutions that empower businesses to
+          thrive in the digital age, achieve their goals, and stay ahead of the competition.</p>
+        <div class="componet_li">
+          <ul class="component-bullets">
+            <li>Empowering Our Team</li>
+            <li>Continuous Learning and Growth</li>
+            <!-- <li>Security and Compliance</li> -->
+          </ul>
+          <ul class="component-bullets ps-3">
+            <li>Agility and Adaptability</li>
+            <!-- <li>Empowering Our Team</li>
+        <li>Agility and Adaptability</li> -->
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <img src="assets/icons/svg/right-frame.svg" alt="" id="right-frame">
+
+  <!-- Main Section -->
+  <section class="why-choose-us text-center">
+    <div class="why-choose-us-container">
       <!-- Header Section -->
       <h1 class="mb-4">Why to Choose Us?</h1>
       <p class="lead mb-5">
-          We offer much more than just technical expertise. We are a team of passionate professionals
-          dedicated to empowering your business's digital success. Here’s what sets us apart and why 
-          you should choose us as your trusted IT partner.
+        We offer much more than just technical expertise. We are a team of passionate professionals
+        dedicated to empowering your business's digital success. Here’s what sets us apart and why
+        you should choose us as your trusted IT partner.
       </p>
-
+      <div class="illustration2  justify-content-center align-items-center" style="padding: 54px 55px;">
+        <img src="imagis/why-to-choose.svg" alt="Illustration" class="img-fluid">
+      </div>
       <!-- Features Section (Using <ul> and <li>) -->
       <ul class="features-list">
-          <li class="feature-item">Experience and Expertise</li>
-          <li class="feature-item">Customized Solutions</li>
-          <li class="feature-item">Innovation at the Core</li>
-          <li class="feature-item">Agility and Timeliness</li>
-          <li class="feature-item">Commitment to Excellence</li>
-          <li class="feature-item">Transparent Pricing</li>
-          <li class="feature-item">Customer Satisfaction</li>
-          <li class="feature-item">Agility and Adaptability</li>
+        <li class="feature-item">Experience and Expertise</li>
+        <li class="feature-item">Customized Solutions</li>
+        <li class="feature-item">Innovation at the Core</li>
+        <li class="feature-item">Agility and Timeliness</li>
+        <li class="feature-item">Agility and Adaptability</li>
+        <li class="feature-item">Transparent Pricing</li>
+        <li class="feature-item">Customer Satisfaction</li>
+        <li class="feature-item">Commitment to Excellence</li>
       </ul>
 
       <!-- Illustration Section -->
-      <div class="illustration d-flex justify-content-center align-items-center">
-          <img src="assets/images/svg/why-to-choose.svg" alt="Illustration" class="img-fluid">
-      </div>
-  </div>
-</section>
+        <img src="imagis/why-to-choose.svg" alt="Illustration" class="illustration1" style="padding-top: 50px;">
+    </div>
+  </section>
 
-<img src="assets/icons/svg/left-frame.svg" alt="" id="left-frame">
-<div class="componet">
-  <h1 class="display-6">Our Team</h1>
-     </div>
-     <h1 class="about_titel">  Driven by Code, Fueled by Creativity:<strong class="text_color"> Our Team's Magic</strong></h1>
-      
-<!-- <footer> -->
-   <footer>
-    <div class="footer-container">
-        <!-- Company Logo & Details -->
-        <div class="footer-logo">
+  <img src="assets/icons/svg/left-frame.svg" alt="" id="left-frame">
+  <div class="componet">
+    <h1 class="display-6">Our Team</h1>
+  </div>
+  <h1 class="about_titel"> Driven by Code, Fueled by Creativity:<strong class="text_color"> Our Team's Magic</strong>
+  </h1>
+
+  <!-- <footer> -->
+  <!-- <footer>
+    <div class="footer-container"> -->
+  <!-- Company Logo & Details -->
+  <!-- <div class="footer-logo">
             <img src="assets/logo/svg/footer-logo.svg" alt="Company Logo" class="logo">
             <p>Lorem ipsum dolor sit amet consectetur. Volutpat pellentesque pretium porttitor eu elementum non sagittis dictum orci. Sit auctor ac nisl ac eget volutpat nunc nulla. Id nulla pretium sed in sit cras. augue nec velit nec lorem nunc.</p>
         </div>
-  
-        <!-- About Us & Services -->
-        <div class="footer-links">
+   -->
+  <!-- About Us & Services -->
+  <!-- <div class="footer-links">
             <div class="footer-section">
               <h4 id="footer_titel">Services</h4>
               <ul>
@@ -235,16 +245,21 @@
 
         function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+    navLinks.classList.toggle('active'); -->
 
-    // Toggle dropdown for mobile view
-    const dropbtn = document.querySelector('.dropbtn');
+  <!-- // Toggle dropdown for mobile view -->
+  <!-- const dropbtn = document.querySelector('.dropbtn');
     dropbtn.addEventListener('click', function() {
         this.classList.toggle('active');
     });
-}        
-</script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+}         -->
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

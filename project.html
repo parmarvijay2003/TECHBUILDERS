@@ -9,35 +9,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-          <img src="assets/logo/svg/" class="img-thumbnail" alt="...">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Services</a>
-                <div class="dropdown-content">
-                    <a href="#">Web Design</a>
-                    <a href="#">App Development</a>
-                    <a href="#">SEO</a>
-                </div>
-            </li>
-            <li>
-                <a href="#">project</a></li>
-                <li>
-                <a href="#">about us</a></li>
-             <li>
-                <a href="#">Contact us</a></li>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/logo/svg/header-logo.svg" alt="techbuliders" srcset="" id="logo">
+      </a>
+      <button class="navbar-toggler ml-0 mr-0." type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars" style="color:white;"></i>
+
+      </button>
+      <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+        <ul class="navbar-nav col-lg ms-auto mb-0 mb-lg-0 w-100 d-flex justify-content-end text-end float-end" id="n">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+              <i class="fa-solid fa-angle-down" id="icone"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/services/game-development.html" id="h1">Game
+                  Development</a></li>
+              <li><a class="dropdown-item" href="/services/software-development.html" id="h2">Software
+                  Development</a></li>
+              <li><a class="dropdown-item" href="/services/branding.html" id="h3">Branding</a></li>
+              <li><a class="dropdown-item" href="/services/graphic-design.html" id="h4">Graphic Design</a></li>
+              <li><a class="dropdown-item" href="/services/product-engineering.html" id="h5">Product
+                  Engineering</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
         </ul>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <span class="icon"></span>
-            <span class="icon"></span>
-            <span class="icon"></span>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
  </h1>
  <img src="assets/icons/svg/left-frame.svg" alt="" id="left-frame">

@@ -179,7 +179,7 @@ bu2.forEach(function(button) {
     function updateCarousel(index) {
         // Remove active class from all cards
         cards.forEach(card => card.classList.remove('active'));
-        
+    
         // Add active class to center card
         cards[index].classList.add('active');
 
@@ -226,15 +226,15 @@ bu2.forEach(function(button) {
     };
 
     // Auto scroll functionality
-    function startAutoScroll() {
-        autoScrollInterval = setInterval(() => {
-            if (currentIndex < cards.length - 1) {
-                updateCarousel(currentIndex + 1);
-            } else {
-                updateCarousel(1);
-            }
-        }, 2000);
-    }
+    // function startAutoScroll() {
+    //     autoScrollInterval = setInterval(() => {
+    //         if (currentIndex < cards.length - 1) {
+    //             updateCarousel(currentIndex + 1);
+    //         } else {
+    //             updateCarousel(1);
+    //         }
+    //     }, 2000);
+    // }
 
     function stopAutoScroll() {
         clearInterval(autoScrollInterval);

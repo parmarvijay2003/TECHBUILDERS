@@ -245,7 +245,6 @@
             top: -119px;
             padding-top: 20px;
             padding-bottom: 20px;
-
         }
 
         .service-section {
@@ -344,12 +343,14 @@
         }
 
         .first_title_componet {
+            display: block;
+            align-items: center;
             max-width: 100%;
             height: 165px;
             margin-top: 50px;
         }
 
-        #Softwer_titel {
+        #our_titel {
             border: 3px dashed rgba(232, 107, 49, 1);
             font-family: Bricolage Grotesque;
             font-size: 2vw;
@@ -364,11 +365,10 @@
             position: relative;
             left: 35%;
             right: 35%;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding: 25px;
             display: flex;
             justify-content: center;
-            z-index: -1;
+            margin-top: 50px;
         }
 
         .portfolio-title-main {
@@ -417,11 +417,6 @@
         .portfolio-btn2 {
             display: none;
         }
-
-        /* .row{
-            padding-left: 100px;
-            padding-right: 100px;
-        } */
         .card1-title {
             color: #007DFC;
             font-family: Bricolage Grotesque;
@@ -575,18 +570,6 @@
             background-color: #ff6a21;
         }
 
-        #our_titel {
-            background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-size: 45px;
-            border: 2px dashed#FB8D48;
-            max-width: max-content;
-            padding: 20px;
-            margin: auto;
-        }
-
         .our_work_header {
             max-width: 200px;
             display: flex;
@@ -602,20 +585,6 @@
             text-align: left;
             top: -100px;
             position: relative;
-        }
-
-        #our_titel {
-            background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            font-size: 45px;
-            border: 2px dashed#FB8D48;
-            max-width: max-content;
-            padding: 20px;
-            margin: auto;
-            position: relative;
-            top: 211px;
         }
 
         .profile-card {
@@ -645,7 +614,6 @@
             align-items: center;
             flex-wrap: wrap;
             color: white;
-            top: 407px;
             position: relative;
             margin-left: 10%;
             margin-right: 10%;
@@ -810,9 +778,6 @@
         }
 
         /*profile-card */
-        .profile-section {
-            margin-top: 400px;
-        }
 
         .profile-container {
             max-width: 1200px;
@@ -968,21 +933,14 @@
 
         /* contact us */
         .container2 {
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
             min-height: 100vh;
-            gap: 0px;
-            position: relative;
-            left: 7%;
-            top: 300px;
+            margin-top: 150px;
         }
-
-        /* 
-.content {
-    max-width: 600px;
-} */
 
         h1 {
             font-size: 36px;
@@ -1195,7 +1153,28 @@
                 font-size: 20px;
             }
         }
-
+        @media (max-width: 1024px) {
+            .first_title_componet {
+                max-width: 100%;
+                height: 0px;
+                margin-top: 173px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+            }
+            .first_title_componet img {
+                display: none;
+            }
+            #our_titel {
+                padding: 25px;
+                max-width: 374px;
+                font-size: 25px;
+                left: 0%;
+                top: 0%;
+                right: 0%;
+            }
+        }
         /* media qrey  tablet view*/
         @media (max-width: 768px) {
             .container {
@@ -1306,7 +1285,13 @@
                 max-width: 378px;
                 margin: auto;
             }
-
+            #our_titel {
+                min-width: min-content;
+                font-size: 25px;
+                left: 0%;
+                right: 0%;
+                padding: 20px;
+            }
             .brand {
                 justify-content: center;
                 align-content: center;
@@ -1344,6 +1329,15 @@
 
             #l_frame {
                 display: none
+            }
+            .first_title_componet {
+                max-width: 100%;
+                height: 0px;
+                margin-top: 110px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
             }
 
             #Services_titel {
@@ -1771,19 +1765,6 @@
                 top: -92px;
             }
 
-            #our_titel {
-                background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                font-size: 22px;
-                border: 2px dashed#FB8D48;
-                min-width: min-content;
-                padding: 20px;
-                margin: auto;
-                position: relative;
-            }
-
             .Achievements {
                 margin-top: 20px;
             }
@@ -1918,4 +1899,19 @@
     position: relative;
     margin-top: 0px;
  } */
+        }
+        @media (max-width:430px) {
+            #our_titel {
+                max-width: 60%;
+                font-size: 20px;
+            }
+        }
+        @media (max-width:375px) {
+
+            #our_titel {
+                max-width: 100%;
+                font-size: 24px;
+                position: relative;
+                left: 133px;
+            }
         }
