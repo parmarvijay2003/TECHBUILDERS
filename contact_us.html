@@ -11,8 +11,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/software-development.css">
-  <link rel="stylesheet" href="contact_us.css">
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="contact_us.css">
   <style>
   </style>
 </head>
@@ -99,7 +99,7 @@
   <div class="contact-card">
     <div class="contact-info">
         <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
-        <div>505, Abhishree Adroit, Near Mansi Circle, Ahmedabad - 380015.</div>
+        <div>505, Abhishree Adroit, Near <br> Mansi Circle, Ahmedabad - 380015.</div>
         
         <h3><i class="fas fa-phone-alt" style="padding-top: 3rem;"></i> Contact Details</h3>
         <div> +91 93760 03344</div>
@@ -116,64 +116,84 @@
             <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
     </div>
-    <div class="form-container">
-        <form action="#" method="post">
-            <input type="text" name="first-name" placeholder="First Name">
-            <input type="text" name="last-name" placeholder="Last Name">
-            <input type="email" name="email" placeholder="Email">
-            <input type="tel" name="phone" placeholder="Phone">
-            <textarea name="message" rows="4" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send">
-        </form>
-    </div>
+    <form>
+      <div class="form-group half-width">
+          <div class="form-field">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="Type here">
+          </div>
+          <div class="form-field">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="Type here">
+          </div>
+      </div>
+      <div class="form-group half-width">
+          <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Type here">
+          </div>
+          <div class="form-field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="Type here">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" placeholder="Type here"></textarea>
+      </div>
+      <!-- <button type="submit" class="submit-btn">Submit</button> -->
+      <a href="/services/services.html" class="portfolio-btn"  style="display: flex;" >Explore More
+        <img src="/assets/images/svg/icon errow.svg" alt="" id="arrow">
+      </a>
+  </form>
 </div>
 
 
-  <!-- footer -->
-  <!-- <footer>
-  <div class="footer-container"> -->
-  <!-- Company Logo & Details -->
-  <!-- <div class="footer-logo">
-          <img src="assets/logo/svg/footer-logo.svg" alt="Company Logo" class="logo">
-          <p>Lorem ipsum dolor sit amet consectetur. Volutpat pellentesque pretium porttitor eu elementum non sagittis dictum orci. Sit auctor ac nisl ac eget volutpat nunc nulla. Id nulla pretium sed in sit cras. augue nec velit nec lorem nunc.</p>
-      </div> -->
+  <!-- footer start -->
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="row">
+        <div class="footer-col">
+          <img src="/assets/logo/svg/footer-logo.svg" alt="Tech Builders Logo" class="logo">
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Volutpat pellentesque pretium porttitor eu elementum non sagittis
+            dictum orci. Sit auctor ac nisl ac eget volutpat nunc nulla.
+          </p>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <h3 id="footer-lable">Service</h3>
 
-  <!-- About Us & Services -->
-  <!-- <div class="footer-links">
-          <div class="footer-section">
-            <h4 id="footer_titel">Services</h4>
-            <ul>
-                <li><a href="#">Digital Marketing</a></li>
-                <li><a href="#">Software Development</a></li>
-                <li><a href="#">Graphic Design</a></li>
-                <li><a href="#">Cyber Security</a></li>
-                <li><a href="#">Branding</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-section">
-              <h4 id="footer_titel">join us</h4>
-              <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Working With Us</a></li>
-                  <li><a href="#">Job Opportunities</a></li>
-              </ul> 
-          </div>
-          <div class="footer-section">
-            <h4 id="footer_titel">Services</h4>
-            <ul>
-                <li><a href="#">Digital Marketing</a></li>
-                <li><a href="#">Software Development</a></li>
-                <li><a href="#">Graphic Design</a></li>
-                <li><a href="#">Cyber Security</a></li>
-                <li><a href="#">Branding</a></li>
-            </ul>
-          </div>
+            <li><a href="#" id="footer-link">Digital Marketing</a></li>
+            <li><a href="#" id="footer-link">Software Development</a></li>
+            <li><a href="#" id="footer-link">Graphic Design</a></li>
+            <li><a href="#" id="footer-link">Cyber Security</a></li>
+            <li><a href="#" id="footer-link">Branding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <h3 id="footer-lable">Join Us</h3>
+            <li><a href="#" id="footer-link">About Us</a></li>
+            <li><a href="#" id="footer-link">Working With Us</a></li>
+            <li><a href="#" id="footer-link">Job Opportunities</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <h3 id="footer-lable">Contact Us</h3>
+            <li><a href="#" id="footer-link">Help / FAQs</a></li>
+            <li><a href="#" id="footer-link">Press</a></li>
+            <li><a href="#" id="footer-link">Affiliates</a></li>
+          </ul>
+        </div>
       </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <p>All Rights Reserved. Copyright &copy; 2023</p>
   </div>
-</footer>
-  <h1 class="last_line"> All Rights Reserved . Copyrights 2023</h1> -->
-
+  
   <script src="script.js"></script>
   <script>
 

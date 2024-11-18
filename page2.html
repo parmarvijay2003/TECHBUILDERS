@@ -7,36 +7,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="project.css">
-        
+        <link rel="stylesheet" href="css/software-development.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-          <img src="assets/logo/svg/" class="img-thumbnail" alt="...">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/logo/svg/header-logo.svg" alt="techbuliders" srcset="" id="logo">
+        </a>
+        <button class="navbar-toggler ml-0 mr-0." type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" style="color:white;"></i>
+
+        </button>
+        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+            <ul class="navbar-nav col-lg ms-auto mb-0 mb-lg-0 w-100 d-flex justify-content-end text-end float-end"
+                id="n">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Services
+                    <i class="fa-solid fa-angle-down" id="icone"></i>
+                </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="game-development.html" id="h1">Game Development</a></li>
+                        <li><a class="dropdown-item" href="software-development.html" id="h2">Software Development</a></li>
+                        <li><a class="dropdown-item" href="branding.html" id="h3">Branding</a></li>
+                        <li><a class="dropdown-item" href="graphic-design.html" id="h4">Graphic Design</a></li>
+                        <li><a class="dropdown-item" href="product-engineering.html" id="h5">Product Engineering</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active " href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+            </ul>
         </div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Services</a>
-                <div class="dropdown-content">
-                    <a href="#">Web Design</a>
-                    <a href="#">App Development</a>
-                    <a href="#">SEO</a>
-                </div>
-            </li>
-            <li>
-                <a href="#">project</a></li>
-                <li>
-                <a href="#">about us</a></li>
-             <li>
-                <a href="#">Contact us</a></li>
-        </ul>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <span class="icon"></span>
-            <span class="icon"></span>
-            <span class="icon"></span>
-        </div>
-    </nav>
+    </div>
+</nav>
 
  </h1>
  <img src="assets/icons/svg/left-frame.svg" alt="" id="left-frame">
@@ -48,23 +68,11 @@
     We co-create and invest in 
     high-potential  <strong class="text_color">startups!!</strong>
    </h1>
-    <!-- nav tabs -->
-   <!-- <nav>
-      <div class="tabs">
-        <i class="fa-solid fa-circle-arrow-left"></i>
-         <ul class="tabs_link">  
-          <li> <a href="#"> web devlopments</a></li>
-          <li> <a href="#"> web devlopments</a></li>
-          <li> <a href="#"> web devlopments</a></li>
-          <li> <a href="#"> web devlopments</a></li>
-          </ul>
-        <i class="fa-solid fa-circle-arrow-right"></i>
-      </div>
-   </nav> -->
+ 
   <!-- tabs details page    -->
   <div class="navbar_tabs">
-    <a class="tab active" onclick="redirectToPage('project.html')"> UI Ux Design</a>
-    <a class="tab" onclick="redirectToPage('page2.html')">Web Development</a>
+    <a class="tab" onclick="redirectToPage('project.html')"> UI Ux Design</a>
+    <a class="tab active" onclick="redirectToPage('page2.html')">Web Development</a>
     <a class="tab" onclick="redirectToPage('page3.html')">mobile app devlopment</a>
     <a class="tab" onclick="redirectToPage('page4.html')">Digital marketing</a>
 </div>

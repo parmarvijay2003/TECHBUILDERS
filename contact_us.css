@@ -103,6 +103,71 @@
     flex: 1;
 }
 
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #FB8D48;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.form-group.half-width {
+    display: flex;
+    gap: 50px;
+}
+
+.form-group.half-width .form-field {
+   max-width: 291px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+    border: 1px solid #FB8D48;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #ccc;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: #FB8D48;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #FB8D48;
+}
+
 h3 {
     font-family: Bricolage Grotesque;
     font-size: 28px;
@@ -127,32 +192,6 @@ h3 {
     
 }
 
-.form-container form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-container form input,
-.form-container form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #FB8D48;
-    border-radius: 5px;
-    background-color: #222;
-    color: #fff;
-}
-
-.form-container form input::placeholder,
-.form-container form textarea::placeholder {
-    color: #aaa;
-}
-
-.form-container form input[type="submit"] {
-    background-color: #FB8D48;
-    border: none;
-    cursor: pointer;
-}
-
 .social-icons {
     display: flex;
     gap: 10px;
@@ -164,8 +203,94 @@ h3 {
     text-decoration: none;
     font-size: 24px;
 }
+/* footer code */
+.footer {
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    color: white;
+    padding: 40px;
+    margin-top: 294px;
+    max-width: 100%;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#footer-lable {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+}
+
+#footer-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style-type: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    max-width: max-content;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    padding-top: 0px;
+    background-color: black;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+
+}
+
 
 /* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .form-group.half-width {
+        flex-direction: column;
+    }
+}
 @media (max-width: 768px) {
     .contact-section {
         flex-direction: column;
@@ -213,6 +338,27 @@ h3 {
     .contact-card {
         flex-direction: column;
     }
+    .footer-col {
+        text-align: left;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media (max-width: 576px) {
+    .footer-col {
+        flex-basis: 100%;
+        /* Each column takes full width */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .get-in-touch{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -237,7 +383,6 @@ h3 {
         border: 2px dashed #FB8D48;
         max-width: fit-content;
         padding: 20px 20px;
-
     }
 
     .contact-wrapper {
