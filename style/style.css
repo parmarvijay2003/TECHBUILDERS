@@ -28,7 +28,7 @@
             transform-style: preserve-3d;
             border-radius: 10px;
             background: linear-gradient(#000000, #000000) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
-            margin-right: 20px;
+            margin: 40px;
         }
 
         .navbar::before {

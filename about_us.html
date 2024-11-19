@@ -11,9 +11,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/software-development.css">
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="about.css">
-  <link rel="stylesheet" href="project.css">
 </head>
 
 <body>
@@ -34,29 +33,28 @@
             <a class="nav-link" aria-current="page" href="/index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
               <i class="fa-solid fa-angle-down" id="icone"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/services/game-development.html" id="h1">Game
-                  Development</a></li>
-              <li><a class="dropdown-item" href="/services/software-development.html" id="h2">Software
-                  Development</a></li>
+              <li><a class="dropdown-item" href="/services/game-development.html" id="h1">Game Development</a></li>
+              <li><a class="dropdown-item" href="/services/software-development.html" id="h2">Software Development</a>
+              </li>
               <li><a class="dropdown-item" href="/services/branding.html" id="h3">Branding</a></li>
               <li><a class="dropdown-item" href="/services/graphic-design.html" id="h4">Graphic Design</a></li>
-              <li><a class="dropdown-item" href="/services/product-engineering.html" id="h5">Product
-                  Engineering</a></li>
+              <li><a class="dropdown-item" href="/services/product-engineering.html" id="h5">Product Engineering</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="project.html">Projects</a>
+            <a class="nav-link active" href="/project.html">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="about_us.html">About Us</a>
+            <a class="nav-link" href="/about_us.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact_us.html">Contact Us</a>
+            <a class="nav-link" href="/contact_us.html">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Blogs</a>
@@ -70,7 +68,7 @@
     <img src="/assets/images/svg/Frame.svg" alt="anymation-img" style="position: relative;">
     <h5 id="Softwer_titel">About Us</h5>
   </div>
-  <h1 class="about_titel">Innovate. Transform. Excel:<strong class="text_color"> Your IT Partner for Success.</strong>
+  <h1 class="about_titel">Innovate. Transform. Excel:<span class="portfolio"> Your IT Partner for Success.</span>
   </h1>
 
   <div class="content-component">
@@ -106,7 +104,7 @@
   </div>
 
   <!-- right -->
-  <div class="content-component">
+  <div class="content-component2">
     <div class="image-section">
       <img src="assets/images/svg/oue-vision.svg" alt="Descriptive Image" class="component-image">
     </div>
@@ -114,15 +112,19 @@
       <div class="portfolio-title-text">
         <span class="portfolio">Our Vision</span>
       </div>
-      <p class="component-paragraph">Our vision is to be the trailblazers of technological innovation, driving positive
-        change and shaping a future where technology is harnessed to its fullest potential. We aspire to be at the
-        forefront of the digital landscape, empowering businesses and individuals alike with cutting-edge solutions that
-        transform the way they operate, interact, and thrive in a rapidly evolving world.</p>
-      <ul class="component-bullets">
-        <li>Unleashing Boundless Possibilities</li>
-        <li>Embracing Collaboration and Partnership</li>
-        <li>Driving Social and Environmental Responsibility</li>
-      </ul>
+      <div class="paragraph-component">
+        <p class="component-paragraph">Our vision is to be the trailblazers of technological innovation, driving
+          positive
+          change and shaping a future where technology is harnessed to its fullest potential. We aspire to be at the
+          forefront of the digital landscape, empowering businesses and individuals alike with cutting-edge solutions
+          that
+          transform the way they operate, interact, and thrive in a rapidly evolving world.</p>
+        <ul class="component-bullets">
+          <li>Unleashing Boundless Possibilities</li>
+          <li>Embracing Collaboration and Partnership</li>
+          <li>Driving Social and Environmental Responsibility</li>
+        </ul>
+      </div>
     </div>
   </div>
   <!-- left -->
@@ -184,82 +186,149 @@
       </ul>
 
       <!-- Illustration Section -->
-        <img src="imagis/why-to-choose.svg" alt="Illustration" class="illustration1" style="padding-top: 50px;">
+      <img src="imagis/why-to-choose.svg" alt="Illustration" class="illustration1" style="padding-top: 50px;">
     </div>
   </section>
 
-  <div class="first_title_componet">
+  <div class="first_title_componet mt-0-xxl mt-3-lg">
     <img src="/assets/images/svg/Frame.svg" alt="anymation-img" style="position: relative;">
     <h5 id="Softwer_titel">Our Team</h5>
   </div>
-  <h1 class="about_titel"> Driven by Code, Fueled by Creativity:<strong class="text_color"> Our Team's Magic</strong>
+  <h1 class="about_titel"> Driven by Code, Fueled by Creativity:<span class="portfolio"> Our Team's Magic</span>
   </h1>
-
-  <!-- <footer> -->
-  <footer>
-    <div class="footer-container">
-  <!-- Company Logo & Details -->
-  <div class="footer-logo">
-            <img src="assets/logo/svg/footer-logo.svg" alt="Company Logo" class="logo">
-            <p>Lorem ipsum dolor sit amet consectetur. Volutpat pellentesque pretium porttitor eu elementum non sagittis dictum orci. Sit auctor ac nisl ac eget volutpat nunc nulla. Id nulla pretium sed in sit cras. augue nec velit nec lorem nunc.</p>
+  <div class="team-carousel-container">
+    <button class="team-carousel-button left">❮</button>
+    <div class="team-card-wrapper">
+      <div class="team-card">
+        <img src="/imagis/our-team-monica.svg" alt="Monica">
+        <div class="team-card-body">
+          <h5 class="team-card-title">Monica</h5>
+          <p class="team-card-text">Digital Marketing Head</p>
         </div>
-  
-  <!-- About Us & Services -->
-  <div class="footer-links">
-            <div class="footer-section">
-              <h4 id="footer_titel">Services</h4>
-              <ul>
-                  <li><a href="#">Digital Marketing</a></li>
-                  <li><a href="#">Software Development</a></li>
-                  <li><a href="#">Graphic Design</a></li>
-                  <li><a href="#">Cyber Security</a></li>
-                  <li><a href="#">Branding</a></li>
-              </ul>
-            </div>
-  
-            <div class="footer-section">
-                <h4 id="footer_titel">join us</h4>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Working With Us</a></li>
-                    <li><a href="#">Job Opportunities</a></li>
-                </ul> 
-            </div>
-            <div class="footer-section">
-              <h4 id="footer_titel">Services</h4>
-              <ul>
-                  <li><a href="#">Digital Marketing</a></li>
-                  <li><a href="#">Software Development</a></li>
-                  <li><a href="#">Graphic Design</a></li>
-                  <li><a href="#">Cyber Security</a></li>
-                  <li><a href="#">Branding</a></li>
-              </ul>
-            </div>
+      </div>
+      <div class="team-card">
+        <img src="/imagis/our-team-steve.svg" alt="Steve">
+        <div class="team-card-body">
+          <h5 class="team-card-title">Steve</h5>
+          <p class="team-card-text">Flutter Developer</p>
         </div>
+      </div>
+      <div class="team-card">
+        <img src="imagis/our-team-michal.svg" alt="Michal">
+        <div class="team-card-body">
+          <h5 class="team-card-title">Michal</h5>
+          <p class="team-card-text">UI/UX Designer</p>
+        </div>
+      </div>
     </div>
-  </footer>
-  <h1 class="last_line"> All Rights Reserved . Copyrights 2023</h1>
+    <button class="team-carousel-button right">❯</button>
+  </div>
+  <div class="container6 p-1">
+    <div class="brand-portfolio-title">
+        Have a <span class="portfolio"> Project </span> in Mind ?
+    </div>
+    <button class="portfolio-btn" style="margin-top: 82px; display: flex;"> Contact Now
+        <img src="/assets/images/svg/icon errow.svg" alt="" id="arrow">
+    </button>
+</div>
 
-    <script src="script.js"></script>
-    <script>
 
-        function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active'); 
+<!-- footer start -->
+<footer class="footer mt-5">
+  <div class="footer_container">
+      <div class="row p-0">
+          <div class="footer-col">
+              <img src="/assets/images/svg/main-logo.svg" alt="Tech Builders Logo" class="logo">
+              <p>
+                  Lorem ipsum dolor sit amet consectetur. Volutpat pellentesque pretium porttitor eu elementum non
+                  sagittis dictum orci. Sit auctor ac nisl ac eget volutpat nunc nulla.
+              </p>
+          </div>
+          <div class="footer-col">
+              <ul>
+                  <h3 id="footer-lable">Service</h3>
 
-   // Toggle dropdown for mobile view -->
-  const dropbtn = document.querySelector('.dropbtn');
-    dropbtn.addEventListener('click', function() {
-        this.classList.toggle('active');
-    });
-}        
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+                  <li><a href="#" id="footer-link">Digital Marketing</a></li>
+                  <li><a href="sofware-devlopments.html" id="footer-link">Software Development</a></li>
+                  <li><a href="graphic-design.html" id="footer-link">Graphic Design</a></li>
+                  <li><a href="#" id="footer-link">Cyber Security</a></li>
+                  <li><a href="branding.html" id="footer-link">Branding</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <ul>
+                  <h3 id="footer-lable">Join Us</h3>
+                  <li><a href="#" id="footer-link">About Us</a></li>
+                  <li><a href="#" id="footer-link">Working With Us</a></li>
+                  <li><a href="#" id="footer-link">Job Opportunities</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <ul>
+                  <h3 id="footer-lable">Contact Us</h3>
+                  <li><a href="#" id="footer-link">Help / FAQs</a></li>
+                  <li><a href="#" id="footer-link">Press</a></li>
+                  <li><a href="#" id="footer-link">Affiliates</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>All Rights Reserved. Copyright &copy; 2023</p>
+</div>
+<!-- footer end -->
 </body>
 
 </html>
+
+<script src="/js/index.js"></script>
+<script>
+  const leftButton = document.querySelector('.team-carousel-button.left');
+  const rightButton = document.querySelector('.team-carousel-button.right');
+  const teamCards = Array.from(document.querySelectorAll('.team-card')); // Convert NodeList to array
+
+  // Rotate cards to the right
+  function rotateRight() {
+    const firstCard = teamCards.shift(); // Remove the first card
+    teamCards.push(firstCard); // Add the first card to the end
+    updateCardPositions();
+  }
+
+  // Rotate cards to the left
+  function rotateLeft() {
+    const lastCard = teamCards.pop(); // Remove the last card
+    teamCards.unshift(lastCard); // Add the last card to the beginning
+    updateCardPositions();
+  }
+
+  // Update card positions
+  function updateCardPositions() {
+    teamCards.forEach((card, index) => {
+      if (index === 0) {
+        card.style.transform = 'translateX(-290px) scale(0.8)';
+        card.style.opacity = '0.5';
+        card.style.zIndex = '1';
+      } else if (index === 1) {
+        card.style.transform = 'translateX(0px) scale(1)';
+        card.style.opacity = '1';
+        card.style.zIndex = '2';
+      } else if (index === 2) {
+        card.style.transform = 'translateX(290px) scale(0.8)';
+        card.style.opacity = '0.5';
+        card.style.zIndex = '1';
+      }
+    });
+  }
+
+  // Event listeners for buttons
+  rightButton.addEventListener('click', rotateRight);
+  leftButton.addEventListener('click', rotateLeft);
+
+  // Initialize card positions
+  updateCardPositions();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
