@@ -119,9 +119,10 @@
     display: block;
 }
 
-.form-group.half-width {
+.form-group {
     display: flex;
     gap: 50px;
+max-width: 100%;
 }
 
 .form-group.half-width .form-field {
@@ -173,7 +174,6 @@ h3 {
     font-size: 28px;
     font-weight: 600;
     line-height: 36px;
-    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #FB8D48;
@@ -286,16 +286,13 @@ h3 {
 
 
 /* Media Queries for Responsiveness */
-@media (max-width: 600px) {
-    .form-group.half-width {
-        flex-direction: column;
-    }
-}
 @media (max-width: 768px) {
     .contact-section {
         flex-direction: column;
     }
-
+    .form-group {
+        gap: 0%;
+    }
     .form-group {
         flex-direction: column;
     }
@@ -337,6 +334,7 @@ h3 {
 
     .contact-card {
         flex-direction: column;
+        padding: 20px 20px;
     }
     .footer-col {
         text-align: left;
