@@ -257,7 +257,7 @@ body {
 /* Carousel container */
 /* Carousel Container */
 .team-carousel-container {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -468,5 +468,10 @@ body {
 
     .illustration1 {
         display: none;
+    }
+}
+@media (max-width: 500px) {
+    .team-card-wrapper{
+        max-width: 100%;
     }
 }
