@@ -1249,6 +1249,7 @@ input {
     .container {
         flex-direction: column;
         text-align: center;
+        max-width: 540px;
     }
 
     .image-container {
@@ -1564,6 +1565,8 @@ input {
     /* footer code */
     .row {
         flex-direction: column;
+        padding-left:20px;
+        padding-right: 20px;
     }
 
     .footer-col {
