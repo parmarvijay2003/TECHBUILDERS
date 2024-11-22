@@ -111,7 +111,7 @@ body {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.15000000596046448px;
-    text-align: left;
+    text-align: justify;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
@@ -191,6 +191,7 @@ body {
 .why-choose-us p.lead {
     font-size: 1.2rem;
     color: #ccc;
+    text-align: justify;
     /* Lighter text for description */
 }
 
