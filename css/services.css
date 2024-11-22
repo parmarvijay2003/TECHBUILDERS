@@ -15,9 +15,7 @@ body {
     font-weight: 900;
     font-style: normal;
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin: 0%;
 }
 /* navbar css code start hear */
 .navbar {
@@ -330,14 +328,6 @@ body {
     justify-content: center;
 }
 
-.col1 {
-    padding-left: 90px;
-}
-
-.col2 {
-    padding-right: 90px;
-}
-
 .portfolio-bt1 {
     display: flex;
     width: 245px;
@@ -627,8 +617,6 @@ body {
     }
 
     #brand_svg {
-        left: 30px;
-        right: 30px;
         position: relative;
         min-width: 355px;
         margin-top: 20px;
@@ -825,14 +813,6 @@ body {
         min-width: 378px;
         min-height: 372px;
         padding-top: 20px;
-    }
-
-    #brand_svg {
-        left: 30px;
-        right: 30px;
-        position: relative;
-        min-width: 355px;
-        margin-top: 20px;
     }
 
     #arrow {
