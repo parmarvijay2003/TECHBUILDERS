@@ -1339,7 +1339,6 @@ input {
         max-width: 336px;
         min-height: 72px;
         margin-top: 20px;
-        margin: auto;
         min-width: 20%;
     }
 
@@ -1727,7 +1726,6 @@ input {
         text-align: center;
         min-height: 72px;
         margin-top: 20px;
-        min-width: auto;
     }
 
     #brand {
