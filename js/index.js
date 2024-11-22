@@ -252,7 +252,7 @@ bu2.forEach(function(button) {
     carousel.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].clientX;
         handleSwipe();
-        startAutoScroll();
+        // startAutoScroll();
     });
 
     function handleSwipe() {
@@ -269,11 +269,11 @@ bu2.forEach(function(button) {
     }
 
     // Start auto scroll
-    startAutoScroll();
+    // startAutoScroll();
 
     // Pause on hover
-    carousel.addEventListener('mouseenter', stopAutoScroll);
-    carousel.addEventListener('mouseleave', startAutoScroll);
+    // carousel.addEventListener('mouseenter', stopAutoScroll);
+    // carousel.addEventListener('mouseleave', startAutoScroll);
 
     // Initial setup
     updateCarousel(1); // Start with center card active

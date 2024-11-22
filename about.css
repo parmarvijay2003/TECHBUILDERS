@@ -257,7 +257,7 @@ body {
 /* Carousel container */
 /* Carousel Container */
 .team-carousel-container {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -404,6 +404,9 @@ body {
         text-decoration-skip-ink: none;
 
     }
+    .about_titel{
+        padding: 100px 0px 0px 0px;
+    }
 
     .text-section {
         margin-right: 0;
@@ -473,5 +476,8 @@ body {
 @media (max-width: 500px) {
     .team-card-wrapper{
         max-width: 100%;
+    }
+    .features-list {
+        padding-left: 30px;
     }
 }
