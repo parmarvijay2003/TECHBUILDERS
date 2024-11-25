@@ -310,7 +310,7 @@ body {
     height: 84px;
     background: rgba(79, 160, 149, 0.1);
     border-radius: 50%;
-    margin: auto;
+    margin: 22px;
     align-items: center;
     text-align: center;
     display: flex;
@@ -1099,7 +1099,7 @@ input {
     top: 350px;
 }
 .container6 {
-    padding-top: 225px;
+    padding-top: 200px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -1120,7 +1120,7 @@ input {
     background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
     color: white;
     padding: 40px;
-    margin-top: 294px;
+    margin-top: 128px;
     max-width: 100%;
     position: relative;
     left: 0px;
@@ -1622,7 +1622,7 @@ input {
     }
 
     #logo {
-        max-width: 100px;
+        max-width: 200px;
     }
 
     .navbar {
