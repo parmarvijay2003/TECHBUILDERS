@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
 @viewport {
     width: device-width;
     zoom: 1;
-  }
+}
+
 :root {
     --bg-color: Black;
     --txt-color: white;
@@ -51,16 +53,19 @@ body {
     box-shadow: none;
 }
 
+.nav-item {
+    padding: 10px;
+}
+
 .nav-link {
-    font-family: 'Bricolage Grotesque';
-    font-weight: bold;
+    font-family: Bricolage Grotesque;
+    font-size: 24px;
+    font-weight: 400;
     line-height: 32px;
     text-align: left;
-    color: #ffffff;
-    /* padding: 15px; */
-    position: relative;
-    /* right: 0px; */
-    font-size: 28px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
 }
 
 .nav-link:hover {
@@ -95,7 +100,7 @@ body {
     /* this is important */
     border: 3px solid transparent;
     border-radius: 5px;
-    background: linear-gradient(#2E2C29, #2E2C29) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
+    background: linear-gradient(#000000, #000000) padding-box, linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
     /* margin-top: 150px; */
     /* left: 50px; */
     /* min-width: 238px; */
@@ -154,19 +159,22 @@ body {
     background-clip: text;
     color: transparent;
     font-size: 28px;
-    /* Active color */
+    font-weight: 700;
 }
 
-/* brand componet css */
 #brand {
+    font-family: Bricolage Grotesque;
     font-size: 45px;
-    font-weight: 700px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
     background: linear-gradient(91.09deg, #FB8D48 2.51%, #ED7136 17.52%, #C54E47 32.53%, #C14F49 32.54%, #9D3863 47.55%, #5E1F72 62.56%);
     -webkit-background-clip: text;
     color: transparent;
-    padding-left: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 0%;
+    padding: 15px;
 }
 
 #text {
@@ -192,6 +200,7 @@ body {
 } */
 .button-main {
     display: flex;
+    margin-top: 80px;
 }
 
 .portfolio-btn {
@@ -201,17 +210,25 @@ body {
     color: white;
     border-radius: 50px;
     display: flex;
-    padding: 25px 20px;
+    padding: 15px 20px;
     gap: 20px;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 28px;
     text-align: left;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    max-height: 60px;
 }
+
+.portfolio-btn:hover {
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    color: white;
+    border: none;
+}
+
 
 .brand_titel {
     border: 3px dashed rgba(232, 107, 49, 1);
@@ -220,13 +237,21 @@ body {
     font-weight: 700;
     line-height: 52px;
     text-align: center;
-    max-width: 222px;
+    justify-content: center;
+    display: flex;
+    max-width: 163px;
+    margin-bottom: 20px;
 }
 
 .title {
-    max-width: 390px;
+    font-family: Bricolage Grotesque;
     font-size: 45px;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 20px;
 }
 
 /* veritey of servisce strat css */
@@ -264,10 +289,75 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 90px;
-
+    margin-top: 50px;
     /* Controls the gap between image and text */
 
 }
+
+
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 30px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for a cleaner look */
+}
+
+.card {
+    flex: 0 0 32%;
+    /* Ensure 3 cards fit fully within the screen width */
+    scroll-snap-align: start;
+    height: 441px;
+    max-width: 397px;
+}
+
+/* Card appearance */
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 992px) {
+    .card {
+        flex: 0 0 48%;
+        /* Show 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        flex: 0 0 100%;
+        /* Show 1 card per row on smaller screens */
+        margin-right: 0;
+    }
+}
+
+
+
+
+
 
 .image-container {
     flex: 1;
@@ -285,7 +375,8 @@ body {
 }
 
 .content-container h1 {
-    font-size: 2.813rem;
+    font-size: 45px;
+    font-weight: 700;
     margin-bottom: 20px;
     color: white;
 }
@@ -299,8 +390,9 @@ body {
 
 .content-container p {
     text-align: justify;
-    font-size: 1.125rem;
-    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
     color: #ffffff;
 }
 
@@ -310,7 +402,7 @@ body {
     height: 84px;
     background: rgba(79, 160, 149, 0.1);
     border-radius: 50%;
-    margin: 22px;
+    margin: 25px;
     align-items: center;
     text-align: center;
     display: flex;
@@ -330,11 +422,13 @@ body {
 .card-title {
     font-size: 24px;
     font-weight: 700;
+    margin: 0%;
 }
 
 .card-text {
     font-size: 14px;
     font-weight: 400;
+    margin: 0%;
 }
 
 .card {
@@ -356,7 +450,7 @@ body {
 #Softwer_titel {
     border: 3px dashed rgba(232, 107, 49, 1);
     font-family: Bricolage Grotesque;
-    font-size: 2vw;
+    font-size: 45px;
     font-weight: 700;
     text-align: center;
     background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
@@ -364,7 +458,7 @@ body {
     background-clip: text;
     color: transparent;
     padding: 0px;
-    max-width: 26%;
+    max-width: 410px;
     position: relative;
     left: 37%;
     right: 33%;
@@ -380,11 +474,12 @@ body {
 
 .portfolio-title-main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding-top: 98px;
-
+    width: 100%;
+    padding: 98px 80px 0px 80px;
 }
 
 .portfolio-title-text {
@@ -420,6 +515,11 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
+
+a:hover {
+    color: white;
+}
+
 .our-work-portfolio-btn {
     background: linear-gradient(black, black) padding-box,
         linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%) border-box;
@@ -427,7 +527,7 @@ body {
     color: white;
     border-radius: 50px;
     display: flex;
-    padding: 25px 20px;
+    padding: 15px 20px;
     gap: 20px;
     font-size: 22px;
     font-weight: 700;
@@ -437,7 +537,15 @@ body {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    max-height: 60px;
 }
+
+.our-work-portfolio-btn:hover {
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    color: white;
+    border: none;
+}
+
 .portfolio-btn2 {
     display: none;
 }
@@ -479,7 +587,7 @@ body {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.5px;
-    text-align: justify;
+    text-align: left;
     padding-top: 30px;
 }
 
@@ -620,7 +728,7 @@ body {
 .second_title_componet {
     max-width: 100%;
     height: 165px;
-    margin-top: 90px;
+    margin-top: 140px;
 }
 
 .second_title_componet img {
@@ -634,15 +742,14 @@ body {
     top: 41px;
     border: 3px dashed rgba(232, 107, 49, 1);
     font-family: Bricolage Grotesque;
-    font-size: 2vw;
+    font-size: 45px;
     font-weight: 700;
     text-align: center;
     background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    padding: 0px;
-    max-width: 30%;
+    max-width: 350px;
     position: relative;
     left: 35%;
     right: 35%;
@@ -700,13 +807,14 @@ width: 0; /* Set width to 0 since we're only using a border */
 .our_text {
     color: rgba(232, 107, 49, 1);
     font-size: 45px;
-    font-weight: 800;
-
+    font-weight: 700;
+    margin: 20px 0px;
 }
 
 .our_paragraph {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 36px;
     color: white;
 
 }
@@ -843,7 +951,7 @@ input[type="radio"] {
 .profile-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 140px 0px 0px 0px;
     position: relative;
 }
 
@@ -909,11 +1017,13 @@ input[type="radio"] {
 .profile-title {
     font-size: 18px;
     font-weight: bold;
+    margin: 0%;
 }
 
 .profile-role {
     font-size: 14px;
     color: gray;
+    margin-bottom: 35px;
 }
 
 .profile-description {
@@ -1028,7 +1138,7 @@ h1 {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 14px;
     color: white;
 }
@@ -1038,7 +1148,7 @@ input {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ff914d;
-    background-color: #222;
+    background-color: black;
     color: #fff;
 }
 
@@ -1069,11 +1179,14 @@ input {
     border: 2px solid transparent;
     color: white;
     border-radius: 90px;
-    min-width: max-content;
     font-size: 28px;
-    padding: 20px;
+    padding: 15px 20px;
     text-align: center;
-    min-height: 76px;
+    max-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 /* about us */
@@ -1093,13 +1206,25 @@ input {
     color: white;
     border-radius: 90px;
     min-width: fit-content;
-    font-size: 28px;
+    font-size: 22px;
+    font-weight: 700;
     padding: 0px;
     text-align: center;
-    padding: 20px;
+    padding: 15px 20px;
     top: 29px;
     position: relative;
     text-decoration: none;
+    display: flex;
+    max-width: 160px;
+    align-items: center;
+    gap: 20px;
+}
+
+.about_btn:hover {
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    color: white;
+    border: none;
+
 }
 
 #about-us {
@@ -1115,6 +1240,7 @@ input {
     position: relative;
     top: 350px;
 }
+
 .container6 {
     padding-top: 200px;
     display: flex;
@@ -1122,6 +1248,7 @@ input {
     align-items: center;
     flex-direction: column;
 }
+
 .brand-portfolio-title {
     color: white;
     font-family: Bricolage Grotesque;
@@ -1132,6 +1259,7 @@ input {
     text-align: center;
     padding-top: 65px;
 }
+
 /* footer code */
 .footer {
     background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
@@ -1158,8 +1286,14 @@ input {
 }
 
 #footer-link {
+    font-family: Bricolage Grotesque;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
     color: white;
 }
 
@@ -1174,12 +1308,21 @@ input {
 .footer-col {
     flex: 1;
     min-width: 200px;
-    margin-bottom: 30px;
 }
 
-.footer-col p{
-    text-align: justify;
+.footer-col p {
+    /* text-align: justify; */
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
+
 .footer-col h3 {
     font-size: 18px;
     margin-bottom: 20px;
@@ -1309,10 +1452,12 @@ input {
         cursor: pointer;
         text-decoration: none;
     }
-    .our-work-portfolio-btn{
+
+    .our-work-portfolio-btn {
         display: none;
     }
 }
+
 /* media qrey  tablet view*/
 @media (max-width: 768px) {
     .container {
@@ -1327,10 +1472,10 @@ input {
     }
 
     .content-container h1 {
-        font-size: 28px;
-        font-weight: 600;
+        font-size: 45px;
+        font-weight: 700;
         display: grid;
-        margin: auto;
+        margin-bottom: 20px;
     }
 
     .content-container p {
@@ -1343,7 +1488,6 @@ input {
         min-width: 406px;
         position: relative;
         top: 30px;
-
     }
 
     .highlight {
@@ -1453,6 +1597,9 @@ input {
         height: 20px;
     }
 
+    /* .text-light{
+    font-size: 50px;
+} */
     .content-container p {
         font-family: Bricolage Grotesque;
         font-size: 16px;
@@ -1630,6 +1777,7 @@ input {
         grid-template-columns: repeat(2, 1fr);
         /* 2 cards per row on medium screens and above */
     }
+
     .about_btn {
         top: 100px;
     }
@@ -1637,7 +1785,7 @@ input {
     /* footer code */
     .row {
         flex-direction: column;
-        padding-left:20px;
+        padding-left: 20px;
         padding-right: 20px;
     }
 
