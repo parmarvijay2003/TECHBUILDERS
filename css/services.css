@@ -257,7 +257,14 @@ body {
     text-align: center;
     padding-top: 65px;
 }
-
+.portfolio-title-main {
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+    padding-top: 98px;
+    width: 100%;
+    padding: 98px 80px 0px 80px;
+}
 .brand-portfolio-title {
     color: white;
     font-family: Bricolage Grotesque;

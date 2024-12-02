@@ -134,7 +134,7 @@ body {
 .componet {
     display: flex;
     justify-items: center;
-    padding-top: 30px;
+    padding-top: 150px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -167,6 +167,9 @@ body {
     gap: 50px;
     top: 40px;
     color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .service-list {
@@ -197,7 +200,7 @@ body {
     background-color: #000;
     color: #fff;
     border: none;
-    padding: 20px;
+    padding: 20px 58px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 15px 0;
@@ -205,12 +208,25 @@ body {
 }
 
 .custom-card h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-family: Bricolage Grotesque;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
 .custom-card p {
-    font-size: 1rem;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
 }
 
 .custom-card .icon {
@@ -230,30 +246,26 @@ body {
     max-width: 100%;
     height: 165px;
     margin-top: 124px;
+    display: flex;
+    position: relative;
+    align-items: center; /* Vertical alignment */
 }
 
-#Softwer_titel {
-    border: 3px dashed rgba(232, 107, 49, 1);
-    font-family: Bricolage Grotesque;
-    font-size: 2vw;
-    font-weight: 700;
-    text-align: center;
-    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    padding: 0px;
-    max-width: 26%;
-    position: relative;
-    left: 37%;
-    right: 33%;
-    top: -122px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    z-index: -1;
-}
+#Softwer_titel_sd {
+        border: 3px dashed rgba(232, 107, 49, 1);
+        font-family: Bricolage Grotesque;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 52px;
+        text-align: center;
+        background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin: 0 auto;
+        padding: 20px;
+        z-index: -1; 
+    }
 
 .line {
     margin-top: 141px;
@@ -266,7 +278,7 @@ body {
 .second_title_componet  {
     max-width: 100%;
     height: 165px;
-    margin-top: 90px;
+    margin-top: 90px !important;
 }
 .second_title_componet img{
     float: right;
@@ -275,7 +287,6 @@ body {
 }
 #How-We-Work-title{
     padding: 20px;
-    top: 41px;
     border: 3px dashed rgba(232, 107, 49, 1);
     font-family: Bricolage Grotesque;
     font-size: 2vw;
@@ -288,8 +299,6 @@ body {
     padding: 0px;
     max-width: 30%;
     position: relative;
-    left: 35%;
-    right: 35%;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -358,7 +367,17 @@ body {
     align-items: center;
     position: relative;
 }
+.card1-title-social-media-cart{
+font-family: Bricolage Grotesque;
+font-size: 32px;
+font-weight: 400;
+line-height: 40px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+padding-bottom: 30px;
 
+}
 .detials {
     gap: 10px;
     font-family: Bricolage Grotesque;
@@ -401,10 +420,10 @@ body {
 }
 
 .button-main {
-    display: flex;
+    display: none !important;
     justify-content: center;
     align-items: center;
-    padding-top: 130px;
+    margin-top: 130px;
 }
 
 .portfolio {
@@ -439,8 +458,8 @@ body {
     display: none;
 }
 .row{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 .card1-title {
     color: #007DFC;
@@ -463,9 +482,11 @@ body {
 }
 
 .card {
-    padding-top: 130px;
+    padding-top: 100px;
     background-color: black;
     color: white;
+    max-width: 100% !important;
+    height: 0% !important;
 }
 
 .card-body {
@@ -562,7 +583,7 @@ body {
         align-items: center;
     }
 
-    #Softwer_titel {
+    #Softwer_titel_sd {
         padding: 25px;
         max-width: 374px;
         font-size: 25px;
@@ -642,10 +663,10 @@ body {
     }
 
     .button-main {
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: center;
-        padding-top: 50px;
+        margin-top: 50px !important;
     }
 
     .portfolio-btn2 {
@@ -696,7 +717,7 @@ body {
         left: 43px;
     }
 
-    #Softwer_titel {
+    #Softwer_titel_sd {
         max-width: 60%;
         font-size: 20px;
     }
@@ -713,7 +734,7 @@ body {
 
 @media (max-width:375px) {
 
-    #Softwer_titel {
+    #Softwer_titel_sd {
         max-width: 100%;
         font-size: 24px;
         position: relative;
@@ -764,7 +785,7 @@ body {
         display: none;
     }
 
-    #Softwer_titel {
+    #Softwer_titel_sd {
         min-width: min-content;
         font-size: 25px;
         left: 0%;

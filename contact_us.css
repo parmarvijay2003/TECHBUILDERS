@@ -44,7 +44,8 @@
     padding-left: 20px;
     padding-right: 20px;
 }
-.contact-pera{
+
+.contact-pera {
     padding-top: 30px;
     text-align: justify;
 }
@@ -90,11 +91,13 @@
     height: 80%;
     border: 0;
 }
-.get-in-touch{
+
+.get-in-touch {
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
 }
+
 .contact-card {
     display: flex;
     flex-direction: row;
@@ -128,11 +131,11 @@
 .form-group {
     display: flex;
     gap: 50px;
-max-width: 100%;
+    max-width: 100%;
 }
 
 .form-group.half-width .form-field {
-   max-width: 291px;
+    max-width: 291px;
 }
 
 .form-group label {
@@ -195,7 +198,7 @@ h3 {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    
+
 }
 
 .social-icons {
@@ -209,6 +212,7 @@ h3 {
     text-decoration: none;
     font-size: 24px;
 }
+
 /* footer code */
 .footer {
     background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
@@ -296,9 +300,11 @@ h3 {
     .contact-section {
         flex-direction: column;
     }
+
     .form-group {
         gap: 0%;
     }
+
     .form-group {
         flex-direction: column;
     }
@@ -342,15 +348,18 @@ h3 {
         flex-direction: column;
         padding: 20px 20px;
     }
+
     .footer-col {
         text-align: left;
     }
-    .row{
+
+    .row {
         display: flex;
         flex-direction: column;
     }
-    
+
 }
+
 @media (max-width: 576px) {
     .footer-col {
         flex-basis: 100%;
@@ -358,7 +367,8 @@ h3 {
         text-align: center;
         margin-bottom: 20px;
     }
-    .get-in-touch{
+
+    .get-in-touch {
         padding-top: 100px;
         padding-left: 20px;
         padding-right: 20px;
