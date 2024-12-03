@@ -372,7 +372,7 @@ body {
 }
 
 .image-container img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
 }
 
@@ -1254,8 +1254,7 @@ input {
 .about_btn:hover {
     background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
     color: white;
-    border: none;
-
+    border: none !important; 
 }
 
 #about-us {

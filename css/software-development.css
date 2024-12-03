@@ -128,13 +128,16 @@ body {
     -webkit-background-clip: text;
 }
 
+.container {
+    margin-bottom: 150px !important;
+}
+
 /* navbaar commponent end */
 
 /* softwer component start */
 .componet {
     display: flex;
     justify-items: center;
-    padding-top: 150px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -226,7 +229,7 @@ body {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    
+
 }
 
 .custom-card .icon {
@@ -248,24 +251,38 @@ body {
     margin-top: 124px;
     display: flex;
     position: relative;
-    align-items: center; /* Vertical alignment */
+    align-items: center;
+    z-index: -1;
+    /* Vertical alignment */
 }
 
 #Softwer_titel_sd {
-        border: 3px dashed rgba(232, 107, 49, 1);
-        font-family: Bricolage Grotesque;
-        font-size: 45px;
-        font-weight: 700;
-        line-height: 52px;
-        text-align: center;
-        background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        margin: 0 auto;
-        padding: 20px;
-        z-index: -1; 
-    }
+    border: 3px dashed rgba(232, 107, 49, 1);
+    font-family: Bricolage Grotesque;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: center;
+    background: linear-gradient(91.11deg, #FB8D48 2.53%, #ED7136 21.88%, #C54E47 41.22%, #C14F49 41.23%, #9D3863 60.58%, #5E1F72 79.93%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0 auto;
+    padding: 20px;
+    z-index: -1;
+}
+
+.game-Dev-points {
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
 
 .line {
     margin-top: 141px;
@@ -275,17 +292,20 @@ body {
     border-image-slice: 1;
     border-image-source: linear-gradient(270deg, rgba(232, 107, 49, 0) 0%, rgba(134, 53, 15, 0.6) 50.38%, rgba(232, 107, 49, 0) 100%);
 }
-.second_title_componet  {
+
+.second_title_componet {
     max-width: 100%;
     height: 165px;
     margin-top: 90px !important;
 }
-.second_title_componet img{
+
+.second_title_componet img {
     float: right;
-    rotate: 180deg; 
-    position: relative; 
+    rotate: 180deg;
+    position: relative;
 }
-#How-We-Work-title{
+
+#How-We-Work-title {
     padding: 20px;
     border: 3px dashed rgba(232, 107, 49, 1);
     font-family: Bricolage Grotesque;
@@ -367,17 +387,19 @@ body {
     align-items: center;
     position: relative;
 }
-.card1-title-social-media-cart{
-font-family: Bricolage Grotesque;
-font-size: 32px;
-font-weight: 400;
-line-height: 40px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-padding-bottom: 30px;
+
+.card1-title-social-media-cart {
+    font-family: Bricolage Grotesque;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-bottom: 30px;
 
 }
+
 .detials {
     gap: 10px;
     font-family: Bricolage Grotesque;
@@ -450,6 +472,7 @@ padding-bottom: 30px;
     cursor: pointer;
     text-decoration: none;
 }
+
 .portfolio-btn:hover {
     color: #ffffff;
 }
@@ -457,10 +480,12 @@ padding-bottom: 30px;
 .portfolio-btn2 {
     display: none;
 }
-.row{
+
+.row {
     padding-left: 80px;
     padding-right: 80px;
 }
+
 .card1-title {
     color: #007DFC;
     font-family: Bricolage Grotesque;
@@ -591,11 +616,13 @@ padding-bottom: 30px;
         top: 0%;
         right: 0%;
     }
-    .componet{
+
+    .componet {
         padding-left: 0px;
         padding-right: 0px;
     }
-    #How-We-Work-title{
+
+    #How-We-Work-title {
         padding: 25px;
         max-width: 374px;
         font-size: 25px;
@@ -603,9 +630,11 @@ padding-bottom: 30px;
         top: 0%;
         right: 0%;
     }
+
     .first_title_componet img {
         display: none;
     }
+
     .second_title_componet {
         max-width: 100%;
         height: 0px;
@@ -615,9 +644,11 @@ padding-bottom: 30px;
         align-content: center;
         align-items: center;
     }
+
     .second_title_componet img {
         display: none;
     }
+
     .title-number {
         font-size: 115px;
     }
@@ -636,7 +667,8 @@ padding-bottom: 30px;
         font-weight: 300;
         line-height: 22px;
     }
-    .row{
+
+    .row {
         padding-left: 0px;
         padding-right: 0px;
         padding-top: 100px;
@@ -647,11 +679,13 @@ padding-bottom: 30px;
     .custom-card.border-middle {
         border-right: none;
     }
-    .componet{
+
+    .componet {
         padding-left: 0%;
         padding-right: 0%;
         padding-top: 100px;
     }
+
     .custom-card {
         border-bottom: 2px solid transparent;
         border-image-source: linear-gradient(270deg, rgba(232, 107, 49, 0) 0%, #E86B31 50%, rgba(232, 107, 49, 0) 100%);
@@ -721,7 +755,8 @@ padding-bottom: 30px;
         max-width: 60%;
         font-size: 20px;
     }
-    #How-We-Work-title{
+
+    #How-We-Work-title {
         max-width: 60%;
         font-size: 20px;
     }
@@ -740,7 +775,8 @@ padding-bottom: 30px;
         position: relative;
         left: 133px;
     }
-    #How-We-Work-title{
+
+    #How-We-Work-title {
         max-width: 100%;
         font-size: 24px;
         position: relative;
@@ -792,7 +828,7 @@ padding-bottom: 30px;
         right: 0%;
         padding: 20px;
     }
-    
+
     .first_title_componet {
         max-width: 100%;
         height: 0px;
@@ -802,8 +838,8 @@ padding-bottom: 30px;
         align-content: center;
         align-items: center;
     }
-    
-    .second_title_componet{
+
+    .second_title_componet {
         max-width: 100%;
         height: 0px;
         margin-top: 90px;
@@ -812,7 +848,8 @@ padding-bottom: 30px;
         align-content: center;
         align-items: center;
     }
-    #How-We-Work-title{
+
+    #How-We-Work-title {
         min-width: min-content;
         font-size: 25px;
         /* top: 0%; */
@@ -820,7 +857,7 @@ padding-bottom: 30px;
         right: 0%;
         padding: 20px;
     }
-    
+
     .card {
         padding-top: 50px;
     }
@@ -880,6 +917,7 @@ padding-bottom: 30px;
         margin: 15px;
         text-align: center;
     }
+
     /* .componet{
         padding-left: 50px;
         padding-right: 50px;
